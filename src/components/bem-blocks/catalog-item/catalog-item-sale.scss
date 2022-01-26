@@ -1,0 +1,136 @@
+.card {
+  @include flex ($flex-direction: column);
+  background-color: #83AEAD;
+  margin: 0 0 2rem 0;
+  border-radius: 10px 10px 0px 0px;
+
+  // .catalog__card-box-img
+  &__box-img {
+    margin-bottom: -.5rem;
+  }
+
+  // .catalog__content
+  &__content {
+    @include flex ($flex-direction: column);
+    padding: 2rem 2rem 1.5rem;
+
+    @include media (xlg) {
+      padding: 2.5rem 2.5rem 1.8rem 2.5rem;
+    }
+
+    h3 {
+      @include font (2rem, 1.35);
+      max-width: 30.5rem;
+
+      @include media (xlg) {
+        max-width: 40rem;
+        @include font (2.3rem);
+        margin-bottom: 1rem;
+      }
+    }
+
+    span {
+      @include font (1.4rem, 1.36, 300);
+      font-family: "Nunito-Light", sans-serif;
+      color: rgba(255, 255, 255, 0.5);
+
+      @include media (xlg) {
+        @include font (1.8rem)
+      }
+    }
+
+  }
+
+  // .catalog__options
+  &__options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 3.5rem;
+    margin: 3rem 0;
+    padding-right: 1rem;
+
+    @include media (xlg) {
+      margin: 2.2rem 0 3.5rem;
+      gap: 2rem 4rem;
+    }
+  }
+
+  // .catalog__parametr
+  &__parametr {
+    @include flex (space-between, center);
+
+    span {
+      @include font (1.2rem, 1.33, 400);
+      font-family: "Nunito-Regular", sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+
+      @include media (xlg) {
+        @include font (1.8rem)
+      }
+    }
+
+    strong {
+      @include font (1.5rem, 1.33, 700);
+      font-family: "Nunito-Bold", sans-serif;
+      color: #FFF;
+
+      @include media (xlg) {
+        @include font (1.8rem)
+      }
+    }
+  }
+
+  // .catalog__price
+  &__price {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+
+    h3 {
+      @include font (2.2rem, 1.36);
+
+      @include media (xlg) {
+        @include font (3.5rem);
+      }
+    }
+
+    span {
+      @include font (1.4rem, 1.36, 300);
+      font-family: "Nunito-Light", sans-serif;
+      color: rgba(255, 255, 255, 0.8);
+
+      @include media (xlg) {
+        @include font (1.8rem)
+      }
+    }
+  }
+
+  &__price--sale {
+
+    h3 {
+      color: #2F3B3F;
+      background-color: #F6CA83;
+      width: 10rem;
+      padding: 4px 0 0 0;
+      border-radius: 4px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @include media (xlg) {
+        width: 15rem;
+      }
+    }
+
+    .old-price {
+      @include font (1.6rem, 1);
+      color: #2F3B3F;
+      display: inline-block;
+      position: absolute;
+      top: -1.5rem;
+      right: -3rem;
+    }
+  }
+}

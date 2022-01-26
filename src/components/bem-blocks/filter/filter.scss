@@ -1,0 +1,22 @@
+.button-box {
+  margin-bottom: 1rem;
+  align-self: flex-end;
+
+  @include media (md) {
+    margin-bottom: 2rem;
+  }
+
+
+}
+
+.button-filter {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #2F3B3F;
+  justify-self: flex-end;
+  @include font(1rem, 1.4);
+
+  @include media (md) {
+    @include font(2rem);
+  }
+}

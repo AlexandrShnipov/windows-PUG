@@ -1,0 +1,36 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'catalog';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header
+        .catalog__content-box
+            h2.catalog__title Каталог
+            include ./../components/bem-blocks/filter/filter
+            .catalog-items__box
+                //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item-sale
+                //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item
+                 //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item
+                 //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item
+                 //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item
+                 //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item
+                 //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item
+                 //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item
+                 //- Каталог
+                include ./../components/bem-blocks/catalog-item/catalog-item 
+        //- замер
+        include ./../components/sections/measuring/measuring
+        //- Отзыв
+        include ./../components/sections/feedback/feedback
+        include ./../components/sections/footer/footer

@@ -1,0 +1,28 @@
+extends ./../layouts/main
+
+block variables
+  - let pageTitle = 'okna';
+
+block content
+  .wrap-feedback
+  .wrapper
+    include ./../components/sections/header/header
+    //- include ./../components/sections/header/header
+    include ./../components/sections/banner-home/banner-home
+    //- Почему мы
+    include ./../components/sections/why-we/why-we
+    //- Рекордная скидка
+    include ./../components/sections/discounts/discounts
+    //- О наших окнах
+    include ./../components/sections/about/about
+    //- Наши принципы
+    include ./../components/sections/principles/principles
+    //- Каталог
+    include ./../components/sections/catalog/catalog
+    //- замер
+    include ./../components/sections/measuring/measuring
+    //- Отзывы
+    include ./../components/sections/reviews/reviews
+    //- Отзыв
+    include ./../components/sections/feedback/feedback
+    include ./../components/sections/footer/footer

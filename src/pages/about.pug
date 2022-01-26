@@ -1,0 +1,21 @@
+extends ./../layouts/main
+
+block variables
+    - let pageTitle = 'о нас';
+
+block content
+    .wrap-feedback
+    .wrapper
+        include ./../components/sections/header/header
+        include ./../components/sections/banner-home/banner-about
+        //- О наших окнах
+        include ./../components/sections/about/about
+        //- Наши принципы
+        include ./../components/sections/principles/principles
+        //- Каталог
+        include ./../components/sections/features-windows/features-windows
+        //- Отзывы
+        include ./../components/sections/reviews/reviews
+        //- Отзыв
+        include ./../components/sections/feedback/feedback
+        include ./../components/sections/footer/footer
