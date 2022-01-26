@@ -68,3 +68,19 @@
 		color: #2F3B3F;
 	}
 }
+
+.filter__button-submit{
+	@include font (2rem, 1.35);
+	padding: 1.5rem 3.5rem;
+	background-color: #2F3B3F;
+	border: 1px solid #2F3B3F;
+	border-radius: 1.5rem;
+	color: #fff;
+}
+
+.filter__button-reset{
+	border:none;
+	@include font (2rem, 1.35);
+	border-bottom:1px solid #2F3B3F;
+	background-color:transparent;
+}
