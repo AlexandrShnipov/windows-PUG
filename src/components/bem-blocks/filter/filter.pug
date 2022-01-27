@@ -1,57 +1,69 @@
+
 .button-box
   button.button-filter Фильтр
-  .catalog-filter__wrap
-    form.catalog-filter__form
-      .catalog-filter__form-item
-        input(type="checkbox" value="Sale" name="Sale")
-      .catalog-filter__form-item
-        h5.catalog-filter__form-item-title Тип товара 
-        ul 
-        li      
-        input(type="checkbox" value="Windows" name="Product1" id="Windous") 
-        label(for="Windous") Окна
-        li      
-        input(type="checkbox" value="Dоors" name="Product2" id="Dоors") 
-        label(for="Windous") Двери
-        li      
-        input(type="checkbox" value="Balconies" name="Product3" id="Balconies") 
-        label(for="Windous") Балконы
-      .catalog-filter__form-item
-        h5.catalog-filter__form-item-title Высота
-        ul
-        li
-        span от
-        input(type="text" name="height-from")   
-        li
-        span до
-        input(type="text" name="height-before")   
-      .catalog-filter__form-item
-        h5.catalog-filter__form-item-title Ширина
-        ul
-        li
-        span от
-        input(type="text" name="width-from")   
-        li
-        span до
-        input(type="text" name="width-before")   
-      .catalog-filter__form-item
-        h5.catalog-filter__form-item-title Цвет 
-        ul 
-        li      
-        input(type="checkbox" value="White" name="Color1" id="Windous") 
-        label(for="Windous") Белый
-        li      
-        input(type="checkbox" value="Wood" name="Color2" id="Wood") 
-        label(for="Wood") Дерево
-      .catalog-filter__form-item
-        h5.catalog-filter__form-item-title Цена
-        ul
-        li
-        span от
-        input(type="text" name="price-from")   
-        li
-        span до
-        input(type="text" name="price-before")
-      .form__buttons-wrap
-        button(class="filter__button-submit" type="submit") Применить
-        button(class="filter__button-reset" type="reset") Сбросить фильтры       
+  .modal
+    .filter__wrap
+        button.filter__button-closed
+          img.filter__button-closed-img(src="./wp-content/themes/factory_windows/assets/img/icons/filter-closed.png", alt="Закрыть", aria-label="Закрыть фильтр")
+        form.filter__form    
+          .filter__form-item
+            .filter__form-item-wrap
+              input(type="checkbox" value="Sale" name="Sale" id="Sale")
+              span.checkbox__span
+              label(for="Sale") Скидки
+          .filter__form-item
+            h5.filter__form-item-title Тип товара
+            ul 
+              li      
+                input(type="checkbox" value="Windows" name="Product1" id="Windous")
+                span.checkbox__span 
+                label(for="Windous") Окна
+              li      
+                input(type="checkbox" value="Dоors" name="Product2" id="Dоors")
+                span.checkbox__span 
+                label(for="Dоors") Двери
+              li      
+                input(type="checkbox" value="Balconies" name="Product3" id="Balconies")
+                span.checkbox__span 
+                label(for="Balconies") Балконы
+          .filter__form-item
+            h5.filter__form-item-title Высота
+            ul
+              li
+                span от
+                input(type="text" name="height-from")   
+              li
+                span до
+                input(type="text" name="height-before")   
+          .filter__form-item
+            h5.filter__form-item-title Ширина
+            ul
+              li
+                span от
+                input(type="text" name="width-from")   
+              li
+                span до
+                input(type="text" name="width-before")   
+          .filter__form-item
+            h5.filter__form-item-title Цвет 
+            ul 
+              li      
+                input(type="checkbox" value="White" name="Color1" id="White")
+                span.checkbox__span  
+                label(for="White") Белый
+              li      
+                input(type="checkbox" value="Wood" name="Color2" id="Wood")
+                span.checkbox__span  
+                label(for="Wood") Дерево
+          .filter__form-item
+            h5.filter__form-item-title Цена
+            ul
+              li
+                span от
+                input(type="text" name="price-from")   
+              li
+                span до
+                input(type="text" name="price-before")
+          .form__buttons-wrap
+            button(class="filter__button-submit" type="submit") Применить
+            button(class="filter__button-reset" type="reset") Сбросить фильтры      

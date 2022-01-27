@@ -69,13 +69,22 @@
 	}
 }
 
+//! buttons filter
+
 .filter__button-submit{
 	@include font (2rem, 1.35);
 	padding: 1.5rem 3.5rem;
 	background-color: #2F3B3F;
 	border: 1px solid #2F3B3F;
-	border-radius: 1.5rem;
+	border-radius: .5rem;
 	color: #fff;
+	transition: all .5s;
+
+	&:hover{
+		box-shadow: 10px 10px 20px #2f3b3f;
+    background-color: #fff;
+    color: #2F3B3F;
+	}
 }
 
 .filter__button-reset{
@@ -84,3 +93,20 @@
 	border-bottom:1px solid #2F3B3F;
 	background-color:transparent;
 }
+
+//! button filter closed in catalog
+
+.filter__button-closed{
+	background-color: transparent;
+	border:none;
+	position: absolute;
+	top: 1%;
+	right: 3%;
+	padding: 0.5rem;
+	transition: all .5s;
+}
+
+.filter__button-closed:hover{
+transform: scale(1.2);
+}
+
