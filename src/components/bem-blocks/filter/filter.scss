@@ -7,7 +7,7 @@
   }
 }
 
-.button-filter {
+.button-modal--oupen {
   border: none;
   background: transparent;
   border-bottom: 1px solid #2F3B3F;
@@ -33,7 +33,7 @@
   display: none;
 }
 
-.is-open {
+.is-oupen {
   display: block;
 }
 
@@ -47,6 +47,7 @@
   position: absolute;
   top: 0;
   right: 4%;
+  z-index: 20;
 
   @include media(md) {
     width: 100%;
@@ -54,6 +55,8 @@
     right: 6%;
   }
 }
+
+
 
 .filter__form {
   z-index: 12;

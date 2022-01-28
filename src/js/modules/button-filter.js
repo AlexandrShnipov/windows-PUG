@@ -1,18 +1,24 @@
 export default function toggleModal() {
-  const filterButton = document.querySelector(".button-filter");
+  const filterButton = document.querySelector(".button-modal--oupen");
   const modal = document.querySelector(".modal");
-  const close = document.querySelector(".filter__button-closed");
+  const close = document.querySelector(".modal__button--closed");
+  const filter = document.querySelector(".filter__wrap")
+
+  const closeModal = () => modal.classList.remove("is-oupen");
 
   filterButton.addEventListener("click", () => {
-    modal.classList.add("is-open");
+    modal.classList.add("is-oupen");
   });
-  close.addEventListener("click", () => {
-    modal.classList.remove("is-open");
-  });
+  close.addEventListener("click", closeModal);
 
   modal.addEventListener("click", () => {
-    if (document.querySelector(".is-open")) {
-      modal.classList.remove("is-open");
+    if (document.querySelector(".is-oupen")) {
+      closeModal();
     }
+  })
+
+  filter.addEventListener("click", (e) => {
+    e.stopPropagation()
+
   })
 }
