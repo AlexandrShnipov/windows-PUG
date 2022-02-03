@@ -1,0 +1,90 @@
+.banner {
+
+  &__content {
+    position: relative;
+  }
+
+  &__grid {
+    padding: 3rem 0rem 0 11rem;
+
+    @include media(xlg) {
+      padding-left: 17rem;
+    }
+
+    @include media(xxl) {
+      padding-left: 26.5rem;
+    }
+  }
+
+  &__content h1 {
+    color: #fff;
+    @include font(2rem, 1.35, 700);
+    background-color: #83AEAD;
+    max-width: 19rem;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    position: absolute;
+    top: -11.5rem;
+    left: -12.5rem;
+
+    @include media(xlg) {
+      @include font(4rem);
+      padding-top: 2.5rem;
+      padding-left: 26rem;
+      padding-bottom: 2.6rem;
+      max-width: 68rem;
+      top: -50.5rem;
+      left: -44rem;
+    }
+
+    @include media(xxl) {
+      @include font(5rem);
+      padding-top: 4rem;
+      padding-left: 16rem;
+      padding-bottom: 4rem;
+      max-width: 68rem;
+    }
+  }
+
+
+  &__img {
+    margin-bottom: 4.1rem;
+
+    @include media(md) {
+      margin-bottom: 7.3rem;
+    }
+
+    @include media(xxl) {
+      margin-bottom: 9.2rem;
+      width: 85rem;
+      height: 57rem;
+    }
+  }
+
+  &__text {
+    @include font(1rem, 1.4);
+    min-width: 25rem;
+    width: 100%;
+    margin-bottom: 7rem;
+
+    @include media(md) {
+      @include font(2rem, 1.6);
+      margin-bottom: 10rem;
+    }
+
+    @include media(xxl) {
+      @include font(2.4rem, 1.33);
+      margin-bottom: 13rem;
+    }
+  }
+
+  &__text p:first-child {
+    margin-bottom: 2rem;
+
+    @include media(md) {
+      margin-bottom: 5rem;
+    }
+  }
+}

@@ -75,7 +75,11 @@ footer {
   align-items: center;
 
   @include media (xlg) {
-    max-width: 96rem;
+    max-width: 93rem;
+  }
+
+  @include media (xxl) {
+    max-width: 114.5rem;
   }
 }
 
