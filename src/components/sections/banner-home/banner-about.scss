@@ -1,11 +1,10 @@
 .banner {
-
   &__content {
     position: relative;
   }
 
   &__grid {
-    padding: 3rem 0rem 0 11rem;
+    padding: 3rem 0rem 0 10rem;
 
     @include media(xlg) {
       padding-left: 17rem;
@@ -24,10 +23,10 @@
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 4rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
     position: absolute;
     top: -11.5rem;
-    left: -12.5rem;
+    left: -13rem;
 
     @include media(xlg) {
       @include font(4rem);
@@ -47,7 +46,6 @@
       max-width: 68rem;
     }
   }
-
 
   &__img {
     margin-bottom: 4.1rem;
@@ -85,6 +83,33 @@
 
     @include media(md) {
       margin-bottom: 5rem;
+    }
+  }
+
+  &__link {
+    @include pos (absolute, $bottom:-6.3rem, $right:-7.2rem);
+    @include wh (100%, 8.9rem);
+    max-width: 10.3rem;
+    background-color: #83AEAD;
+    border: 3px solid #83AEAD;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/icons/arrow-white.svg);
+    transform: translate(-50%, -50%);
+
+    &:hover,
+    &:focus {
+      background-color: #116988;
+      border-color: #116988;
+
+    }
+
+    @include media (xl) {
+      height: 6.3rem;
+      max-width: 8.3rem;
+      bottom: -4.2rem;
+      right: -6rem;
     }
   }
 }
