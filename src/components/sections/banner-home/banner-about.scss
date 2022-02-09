@@ -15,6 +15,36 @@
     }
   }
 
+  &__box {
+    position: relative;
+
+    &::before {
+      content: '';
+      @include pos (absolute, $bottom:13.5rem, $left:-1rem);
+      @include wh (100%, 5.5rem);
+      max-width: 4.1rem;
+      border: 1px solid #83AEAD;
+      border-radius: 10px;
+      // z-index: -1;
+
+      @include media (md) {
+        @include pos (absolute, $bottom:28rem, $left:-1rem);
+      }
+
+      @include media (xlg) {
+        @include pos (absolute, $bottom:46rem, $right:-5rem);
+        @include wh (100%, 6.5rem);
+        max-width: 8.3rem;
+      }
+
+      @include media (xxl) {
+        @include pos (absolute, $bottom:50.5rem, $right:-5rem);
+        height: 8.9rem;
+        max-width: 10.3rem;
+      }
+    }
+  }
+
   &__content h1 {
     color: #fff;
     @include font(2rem, 1.35, 700);
@@ -41,7 +71,7 @@
     @include media(xxl) {
       @include font(5rem);
       padding-top: 4rem;
-      padding-left: 16rem;
+      padding-left: 23rem;
       padding-bottom: 4rem;
       max-width: 68rem;
     }
@@ -56,7 +86,7 @@
 
     @include media(xxl) {
       margin-bottom: 9.2rem;
-      width: 85rem;
+      max-width: 85rem;
       height: 57rem;
     }
   }
@@ -87,9 +117,9 @@
   }
 
   &__link {
-    @include pos (absolute, $bottom:-6.3rem, $right:-7.2rem);
-    @include wh (100%, 8.9rem);
-    max-width: 10.3rem;
+    @include pos (absolute, $bottom:10.5rem, $right:-3rem);
+    @include wh (100%, 5.5rem);
+    max-width: 4.1rem;
     background-color: #83AEAD;
     border: 3px solid #83AEAD;
     border-radius: 10px;
@@ -98,18 +128,28 @@
     background-image: url(../img/icons/arrow-white.svg);
     transform: translate(-50%, -50%);
 
+    @include media (md) {
+      @include pos (absolute, $bottom:25rem, $right:-3rem);
+    }
+
+    @include media (xlg) {
+      @include pos (absolute, $bottom:43rem, $right:-5rem);
+      height: 6.5rem;
+      max-width: 8.3rem;
+    }
+
+    @include media (xxl) {
+      @include pos (absolute, $bottom:46rem, $right:-6rem);
+      height: 8.9rem;
+      max-width: 10.3rem;
+    }
+
     &:hover,
     &:focus {
       background-color: #116988;
       border-color: #116988;
-
-    }
-
-    @include media (xl) {
-      height: 6.3rem;
-      max-width: 8.3rem;
-      bottom: -4.2rem;
-      right: -6rem;
     }
   }
+
+
 }
