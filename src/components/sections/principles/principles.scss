@@ -1,27 +1,17 @@
 .principles {
-	padding: 12.5rem 0 15.5rem;
+	margin-bottom: 10.6rem;
 
 	@include media (xl) {
 		padding-bottom: 9rem;
 	}
 
-	h2 {
-		position: relative;
-		padding-left: 19.8rem;
-		margin-bottom: 7rem;
-
-		&::after {
-			@include pseudo;
-			@include wh (16.6rem, 0.2rem);
-			@include pos (absolute, $bottom: 2.7rem, $left: 0);
-			background-color: rgba(24, 24, 24, 0.5);
-		}
+	& h2{
+		margin-bottom: 2rem;
 	}
 
 	// .principles__flex
 	&__flex {
-		display: flex;
-		gap: 3rem;
+	
 	}
 
 	// .principles__box-content
@@ -30,9 +20,9 @@
 	}
 
 	h3 {
-		@include font (3rem, 4.1rem, $text-align: left);
+		@include font (1.5rem, 1.33, $text-align: left);
 		color: #2F3B3F;
-		margin-bottom: 4.7rem;
+		margin-bottom: 3rem;
 
 		@include media (xlg) {
 			@include font (2.4rem, 3.3rem);
@@ -76,9 +66,13 @@
 		position: relative;
 
 		&::after {
-			@include pseudo;
-			@include wh (0.1rem, 11rem);
-			@include pos (absolute, $top: -12.8rem, $left: 3rem);
+			content: "";
+			display: block;
+			width: 0.1rem;
+			height: 3.5rem;
+			position: absolute;
+			top: -6rem;
+			left: 2.5rem;
 			background-color: #83AEAD;
 
 			@include media (xlg) {
@@ -98,9 +92,9 @@
 
 		// .svg-txt__block
 		&__block {
-			display: flex;
-			gap: 3rem;
-			max-width: 60rem;
+			display: flex;	
+			// max-width: 60rem;
+			width: 100%;
 
 			&:hover,
 			&:focus {
@@ -126,7 +120,7 @@
 
 		// .svg-txt__block-svg
 		&__block-svg {
-			@include wh (6.8rem);
+			@include wh (5rem);
 			border-radius: 50%;
 			background-color: #83AEAD;
 			box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
@@ -153,7 +147,9 @@
 		// .svg-txt__content
 		&__content {
 			@include flex ($flex-direction: column);
-			gap: 3rem;
+			gap: 1rem;
+			// max-width: 20.5rem;
+			width: 58%;
 
 			@include media (xlg) {
 				gap: 2.5rem;
@@ -166,12 +162,10 @@
 			}
 
 			p {
-				@include font (2.2rem, 3rem);
-				max-width: 37.5rem;
+				@include font (1.2rem, 1.33);	
 
 				@include media (xlg) {
-					@include font (1.8rem, 2.5rem);
-					max-width: 30rem;
+					@include font (1.8rem, 2.5rem);			
 				}
 			}
 		}

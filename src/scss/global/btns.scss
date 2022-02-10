@@ -1,5 +1,5 @@
 .btn,
-.btns,
+.btn--link,
 .btn-modal {
 	font-family: "Nunito-SemiBold", sans-serif;
 	@include font (2rem, 2.7rem, 600);
@@ -7,6 +7,7 @@
 	transition: all 0.5s;
 	width: 100%;
 	@include flex (center, center);
+	display: inline-block;
 
 }
 
@@ -24,7 +25,7 @@
 	}
 }
 
-.btns {
+.btn--link {
 	height: 5rem;
 	max-width: 16.7rem;
 	border: 2px solid #2F3B3F;
@@ -41,7 +42,7 @@
 
 	&::after {
 		@include pseudo;
-		@include pos (absolute, $top:50%, $right:-3.8rem);
+		@include pos (absolute, $top:50%, $right:-2rem);
 		@include wh(4.4rem, 1.6rem);
 		@include background (url(../img/icons/arrow.svg));
 		transform: translateY(-50%);
@@ -94,7 +95,25 @@
 	background-color:transparent;
 }
 
-//! button modal closed
+//! button modal
+
+.button-modal--open{	
+	border:none;
+	border-bottom: 1px solid #2F3B3F;
+	color: #2F3B3F;
+	background:transparent;	
+	@include font (1rem, 1.35);
+
+	 @include media(md){
+		@include font (2rem);
+	 }
+
+	&:hover{
+		text-shadow: 0 0 2px #2F3B3F;
+	}
+}
+
+
 
 .modal__button--closed{
 	background-color: transparent;

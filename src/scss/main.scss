@@ -41,6 +41,8 @@
 @import "./../components/bem-blocks/catalog-item/catalog-item-sale";
  // единица каталога распродажа
 @import "./../components/bem-blocks/filter/filter";
+@import "./../components/bem-blocks/characteristics/characteristics.scss";
+
 
 // Секции
 @import "./../components/sections/banner-home/banner-home";
@@ -54,3 +56,7 @@
 @import "./../components/sections/reviews/reviews";
 @import "./../components/sections/feedback/feedback";
 @import "./../components/sections/footer/footer";
+@import "./../components/sections/features-windows/features-windows.scss";
+
+// Страницы
+@import "./../pages/catalog.scss";

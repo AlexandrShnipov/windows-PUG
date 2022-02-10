@@ -23,37 +23,7 @@ header,
 section,
 footer {
   width: 100%;
-}
-
-  h2.catalog__title {
-    @include font(2rem, 1.35);
-    margin-bottom: 1rem;
-    margin-top: 4rem;
-    padding-left: 7.1rem;
-    position: relative;
-
-    @include media(md) {
-      margin-top: 8rem;
-      padding-left: 20rem;
-      @include font(4rem);
-    }
-
-    @include media(xl) {
-      margin-bottom: 2.5rem;
-      margin-top: 10rem;
-    }
-
-    &::after {
-      @include pseudo;
-      @include wh (7rem, 2px);
-      @include pos (absolute, $bottom: 50%, $left: 0);
-      background-color: rgba(24, 24, 24, 0.5);
-
-      @include media(md) {
-        @include wh (17rem, 2px);
-      }
-    }
-  }
+} 
 
 .wrapper {
   width: 100%;
@@ -109,56 +79,3 @@ footer {
   max-width: 100%;
 }
 
-.catalog__content-box {
-  margin: 0 3rem;
-  display: flex;
-  flex-direction: column;
-
-  @include media(md) {
-    margin: 0 4.7rem 8rem;
-  }
-
-  @include media (xl) {
-    margin: 0 14.7rem 11rem;
-  }
-}
-
-.catalog-items__box {
-  display: grid;
-
-  @include media(md) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 3rem;
-  }
-
-  @include media (xl) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  &>.card:nth-child(9),
-  &>.card:nth-child(8),
-  &>.card:nth-child(7),
-  &>.card:nth-child(6),
-  &>.card:nth-child(5) {
-    display: none;
-  }
-
-  &>.card:nth-child(5),
-  &>.card:nth-child(6) {
-    @include media (md) {
-      display: block;
-    }
-  }
-
-  &>.card:nth-child(7),
-  &>.card:nth-child(8),
-  &>.card:nth-child(9) {
-    @include media (xl) {
-      display: block;
-    }
-  }
-}
-
-.catalog__content-box{
-  position: relative;
-}

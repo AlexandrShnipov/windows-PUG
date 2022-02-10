@@ -1,5 +1,23 @@
-include ./../../bem-blocks/tabs/tabs.pug
+//- include ./../../bem-blocks/tabs/tabs.pug
 .characteristics__wrapper
-    img(src="./wp-content/themes/factory_windows/assets/img/nobel.jpg", alt="Трехкамерный профиль Noвel")
+
+  .tab.tab--active
+    span: svg(width="80" height="68")
+      use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#characteristicsIcon")
+    p Трехкамерный профиль Noвel
+
+  .characteristics__content-box
+    .img-profill__box
+      img(src="./wp-content/themes/factory_windows/assets/img/nobel.jpg", alt="Трехкамерный профиль Noвel")
+
     h3 Трехкамерный профиль Noвel
     p Три камеры профиля блокируют уличный шум и повышают теплоизоляцию 
+  .tab 
+    span: svg(width="80" height="68")
+      use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#characteristicsIcon")
+    p Стеклопакет RS <br> с нано-покрытием
+  .tab 
+    span: svg(width="80" height="68")
+      use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#characteristicsIcon")
+    p Стеклопакет RS <br> с нано-покрытием
+
