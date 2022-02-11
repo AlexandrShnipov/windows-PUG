@@ -6,8 +6,15 @@
     margin-bottom: 4rem;
   }
 
-  h2.title--gold {
+  h2.title--best {
     margin-top: 3rem;
+  //  align-self: end;
+  //  padding-right: 7.1rem;
+
+  //  &::after{
+  //    right: 0;
+  //    left: initial;
+  //  }
   }
 }
 

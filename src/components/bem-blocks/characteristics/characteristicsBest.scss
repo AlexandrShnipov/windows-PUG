@@ -7,7 +7,7 @@
   border: 2px solid #83AEAD;
   margin-bottom: 2rem;
 
-  & span {
+  & span{
     display: inline-block;
     margin-right: 2.3rem;
     fill: #83AEAD;
@@ -16,34 +16,34 @@
   &.tab--active {
     background: #83AEAD;
     margin-bottom: 3rem;
-
-    & p {
+    
+    & p{
       color: #fff;
     }
 
-    & span svg {
+    & span svg{
       fill: #fff;
     }
-  }
+  }  
 }
 
-.characteristics__content-box {
-  .img-profill__box {
+.characteristics__content-box{
+  .img-profill__box{
     min-width: 12.1rem;
     min-height: 16rem;
 
-    & img {
+    & img{
       width: auto;
     }
   }
 
-  h3 {
+  h3{
     @include font(1.8rem, 1.39, 700);
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
     position: relative;
 
-    &::after {
+    &::after{
       position: absolute;
       content: ' ';
       bottom: 0;
@@ -51,43 +51,12 @@
       height: 1px;
       width: 60%;
       background-color: #83AEAD;
-      opacity: .2;
+      opacity: .2;  
     }
   }
 
-  & p {
+  & p{
     @include font(1.2rem, 1.33);
     margin-bottom: 3rem;
   }
-}
-
-//! Best
-.characteristics__wrapper{
-  margin-bottom: 2rem;
-}
-
-.characteristics__wrapper .tab.tab--best {
-  border: 2px solid #F6CA83;
-
-
-  &.tab--active {
-    background-color: #fff;
-    margin-bottom: 2rem;
-
-    & p {
-      color: #2F3B3F;
-    }
-
-    & span svg {
-      fill: initial;
-    }
-  }
-
-  & span svg {
-    fill: initial;
-  }
-}
-
-.characteristics__content-box.characteristics__content-box--best {
-  display: none;
 }

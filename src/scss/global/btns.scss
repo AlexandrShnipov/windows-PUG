@@ -1,4 +1,5 @@
 .btn,
+.btns,
 .btn--link,
 .btn-modal {
 	font-family: "Nunito-SemiBold", sans-serif;
@@ -25,7 +26,8 @@
 	}
 }
 
-.btn--link {
+.btn--link,
+.btns {
 	height: 5rem;
 	max-width: 16.7rem;
 	border: 2px solid #2F3B3F;
@@ -72,7 +74,7 @@
 
 //! buttons filter
 
-.filter__button-submit{
+.filter__button-submit {
 	@include font (2rem, 1.35);
 	padding: 1.5rem 3.5rem;
 	background-color: #2F3B3F;
@@ -81,43 +83,41 @@
 	color: #fff;
 	transition: all .5s;
 
-	&:hover{
+	&:hover {
 		box-shadow: 10px 10px 20px #2f3b3f;
-    background-color: #fff;
-    color: #2F3B3F;
+		background-color: #fff;
+		color: #2F3B3F;
 	}
 }
 
-.filter__button-reset{
-	border:none;
+.filter__button-reset {
+	border: none;
 	@include font (2rem, 1.35);
-	border-bottom:1px solid #2F3B3F;
-	background-color:transparent;
+	border-bottom: 1px solid #2F3B3F;
+	background-color: transparent;
 }
 
 //! button modal
 
-.button-modal--open{	
-	border:none;
+.button-modal--open {
+	border: none;
 	border-bottom: 1px solid #2F3B3F;
 	color: #2F3B3F;
-	background:transparent;	
+	background: transparent;
 	@include font (1rem, 1.35);
 
-	 @include media(md){
+	@include media(md) {
 		@include font (2rem);
-	 }
+	}
 
-	&:hover{
+	&:hover {
 		text-shadow: 0 0 2px #2F3B3F;
 	}
 }
 
-
-
-.modal__button--closed{
+.modal__button--closed {
 	background-color: transparent;
-	border:none;
+	border: none;
 	position: absolute;
 	top: 1%;
 	right: 3%;
@@ -125,7 +125,39 @@
 	transition: all .5s;
 }
 
-.modal__button--closed:hover{
-transform: scale(1.2);
+.modal__button--closed:hover {
+	transform: scale(1.2);
 }
 
+// about button
+.about__button,
+.characteristics__button {
+
+	display: flex;
+	justify-content: space-between;
+	grid-area: button;
+	align-self: end;
+
+	.btn,
+	.btn--link {
+		height: 5.5rem;
+		max-width: 22rem;	
+		padding-left: 2rem;
+		padding-right: 2rem;
+		display: flex;
+		align-items:center;
+
+		// @include media (xlg) {
+		// 	max-width: 21rem;
+		// }
+	}
+
+	.btn {
+		filter: drop-shadow(10px 10px 20px rgba(131, 174, 173, 0.4));
+		margin-right: 2.5rem;
+	}
+
+	.btn--link{
+		text-align: center;
+	}
+}

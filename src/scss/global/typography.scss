@@ -4,23 +4,37 @@ h2 {
     color: #2F3B3F;
     align-self: flex-start;
     position: relative;
-    padding-left: 7.1rem; 
+    padding-left: 7.1rem;
 
     @include media(md) {
         @include font(4rem);
-        padding-left: 20rem; 
+        padding-left: 20rem;
     }
-    
+
     &::after {
         @include pseudo;
         @include wh (7rem, 2px);
         @include pos (absolute, $bottom: 49%, $left: 0);
         background-color: rgba(24, 24, 24, 0.5);
-  
+
         @include media(md) {
-          @include wh (17rem, 2px);
+            @include wh (17rem, 2px);
         }
-      }
+    }
+}
+
+h2.title--right {
+    align-self: end;
+    padding-right: 7.1rem;
+
+    @include media(md) {     
+        padding-right: 20rem;
+    }
+
+    &::after {
+        right: 0;
+        left: initial;
+    }
 }
 
 h3 {

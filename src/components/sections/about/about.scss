@@ -80,32 +80,6 @@
 		}
 	}
 
-	// .about__button
-	&__button {
-		display: flex;
-		justify-content: space-between;
-		grid-area: button;
-		align-self: end;
-	}
-
-	.btn,
-	.btn--link {
-		height: 5.5rem;
-		max-width: 16.5rem;
-
-		@include media (xlg) {
-			max-width: 21rem;
-		}
-	}
-
-	.btn {
-		filter: drop-shadow(10px 10px 20px rgba(131, 174, 173, 0.4));
-	}
-
-	.btn--link {
-		text-align: center;
-	}
-
 	// .about__box-img
 	&__box-img {
 		// max-width: 55.8rem;
