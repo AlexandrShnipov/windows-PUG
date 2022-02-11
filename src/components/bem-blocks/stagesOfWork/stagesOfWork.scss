@@ -1,0 +1,67 @@
+.stagesOfWork {
+  background-color: #83AEAD;
+  padding-top: 4.2rem;
+  padding-bottom: 4.3rem;
+
+  & h2 {
+    margin-bottom: 4rem;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+    gap: 1.5rem;
+  }  
+
+  &__item:last-child{
+    margin-top: 3rem;
+  }
+
+  &__item-img {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scale 1s infinite;
+     }
+
+  &__item-img img {
+    width: auto;
+    max-height: 67%;
+    
+  }
+
+  &__item-title {
+   
+  }
+
+  &__item-text {
+    @include font(1.2rem, 1.33);
+    text-align: center;
+    max-width: 16rem;    
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.05);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

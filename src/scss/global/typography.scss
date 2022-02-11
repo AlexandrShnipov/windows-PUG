@@ -49,6 +49,12 @@ h4 {
     color: #2F3B3F;
 }
 
+h5 {
+    @include font (1.5rem, 1.33, 700);
+    font-family: "Nunito-Bold", sans-serif;
+    color: #2F3B3F;
+}
+
 p {
     font-weight: 400;
     text-align: left;
