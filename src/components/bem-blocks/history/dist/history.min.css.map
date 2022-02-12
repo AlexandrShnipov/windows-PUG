@@ -1,0 +1,1 @@
+{"version":3,"sources":["history.scss"],"names":[],"mappings":"AAAA,gBACE,cAAe,OAGjB,uBACE,cAAe,KACf,QAAS,KACT,WAAY,OACZ,sBAAuB","file":"history.min.css","sourcesContent":["h2.title--right{\r\n  margin-bottom: 2.5rem; \r\n}\r\n\r\n.history-content__item{\r\n  margin-bottom: 4rem;\r\n  display: grid;\r\n  column-gap: 2.5rem;\r\n  grid-template-columns: repeat(2, 1fr);\r\n}"]}

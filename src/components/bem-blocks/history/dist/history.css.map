@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["history.scss"],"sourcesContent":["h2.title--right{\r\n  margin-bottom: 2.5rem; \r\n}\r\n\r\n.history-content__item{\r\n  margin-bottom: 4rem;\r\n  display: grid;\r\n  column-gap: 2.5rem;\r\n  grid-template-columns: repeat(2, 1fr);\r\n}"],"file":"history.css"}

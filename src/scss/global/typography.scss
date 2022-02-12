@@ -24,6 +24,7 @@ h2 {
 }
 
 h2.title--right {
+    @include font(1.5rem, 1.33, 800);
     align-self: end;
     padding-right: 7.1rem;
 
