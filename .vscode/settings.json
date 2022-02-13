@@ -1,4 +1,5 @@
 {
   "compile-hero.disable-compile-files-on-did-save-code": false,
-  "compile-hero.x-compile-files-in-mixin-folders": true
+  "compile-hero.x-compile-files-in-mixin-folders": true,
+  "files.autoSave": "afterDelay"
 }
