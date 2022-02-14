@@ -7,9 +7,17 @@
 	align-self: flex-start;
 	margin-left: 2rem;
 
+	@media(max-width:413px){
+		align-self:center;
+	}
+
 	li {
 		width: 3.5rem;
 		height: 3.5rem;
+	}
+
+	li+li{
+		margin-left: 6.5rem;
 	}
 
 	a {

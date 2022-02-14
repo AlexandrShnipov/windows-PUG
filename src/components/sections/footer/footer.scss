@@ -4,50 +4,21 @@
 	&__content {
 		width: 100%;
 		background-color: #83AEAD;
-		padding: 14.1rem 0 4rem;
-
-		li,
-		a {
-			@include font (1.4rem, 1.9rem, 400);
-			font-family: "Nunito-Regular", sans-serif;
-			color: rgba(47, 59, 63, 0.8);
-			transition: all 0.4s;
-		}
-
-		a {
-
-			&:hover,
-			&:focus {
-				color: rgba(47, 59, 63, 0.8);
-				transition: all 0.4s;
-			}
-		}
-
-		svg {
-			fill: transparent;
-			stroke: #2F3B3F;
-			@include wh (100%);
-			transition: all 0.5s;
-		}
-	}
-
-	a {
-		width: 100%;
-
-		span {
-			display: none;
-
-			@media (min-width: 1024px) {
-				display: inline;
-			}
-		}
+		padding: 7.4rem 0 4.1rem;
 	}
 
 	// .footer__wrapper
 	&__wrapper {
-		@include flex (space-between, $flex-wrap: wrap);
-		gap: 12.2rem;
+		display: grid;
+		grid-template-columns: repeat(3fr);
+		column-gap: 4rem;
 		width: 100%;
+
+		@media(max-width:413px) {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+		}
 
 		@include media (xl) {
 			gap: 5rem;
@@ -58,14 +29,81 @@
 	&__flex {
 		@include flex ($flex-direction: column);
 
-		h5 {
-			@include font(1.8rem, 2.5rem, 700);
-			font-family: "Nunito-Bold", sans-serif;
-			color: #2F3B3F;
-			margin-bottom: 3rem;
+		@media(max-width:413px) {
+			align-items: center;
 		}
 
+		h5.footer__item-title {
+			@include font(1.2rem, 1.33, 700);
+			font-family: "Nunito-Bold", sans-serif;
+			color: #000000;
+			margin-bottom: 1.8rem;
+		}
+
+		h5.footer__item-title.footer__item-title--last-child {
+			font-size: 1.5rem;
+		}
 	}
+
+	&__flex ul {
+		display: flex;
+		gap: .8rem;
+	}
+
+	&__flex:last-child {
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		justify-self: center;
+		padding-top: 3.2rem;
+		align-items: center;
+
+		@media(max-width:413px) {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 3;
+		}
+	}
+
+	li,
+	a {
+		@include font (1rem, 1.4, 400);
+		font-family: "Nunito-Regular", sans-serif;
+		color: rgba(47, 59, 63, 0.8);
+		transition: all 0.4s;
+	}
+
+	a {
+
+		&:hover,
+		&:focus {
+			color: rgba(47, 59, 63, 0.8);
+			transition: all 0.4s;
+		}
+	}
+
+	svg {
+		fill: transparent;
+		stroke: #2F3B3F;
+		@include wh (100%);
+		transition: all 0.5s;
+	}
+
+	a {
+		width: 100%;
+
+		// span {
+		// 	display: none;
+
+		// 	@media (min-width: 1024px) {
+		// 		display: inline;
+		// 	}
+		// }
+	}
+
+
 
 	// .footer__about
 	&__about {
@@ -74,6 +112,8 @@
 
 		li {
 			&:first-child {
+				display: none;
+
 				a {
 					border-bottom: 1px solid rgba(47, 59, 63, 0.8);
 					transition: all 0.4s;
@@ -93,6 +133,10 @@
 	&__shoppers {
 		@include flex ($flex-direction: column);
 		gap: 2.8rem;
+
+		@media(max-width:413px) {
+			align-items: center;
+		}
 	}
 
 	// .footer__contact
@@ -100,11 +144,15 @@
 		@include flex ($flex-direction: column);
 		gap: 2rem;
 
+		@media(max-width:413px) {
+			align-items: center;
+		}
+
 		li {
 			a {
 				display: flex;
 				align-items: center;
-				gap: 2rem;
+				gap: .3rem;
 
 				&:hover,
 				&:focus {
@@ -131,11 +179,11 @@
 	}
 
 	.btn-modal {
-		height: 6rem;
-		max-width: 16.6rem;
-		@include font (1.8rem, 2.5rem);
-		margin-top: 8.2rem;
-		align-self: flex-end;
+		padding: 1rem 2rem;
+		@include font (1.4rem, 1.36);
+		margin-top: 3rem;
+		align-self: center;
+		width: fit-content;
 	}
 
 	.social {
@@ -143,28 +191,27 @@
 		padding-top: 0;
 		margin-left: 0;
 	}
+}
 
 
 
-	/***********Анимация для svg **************/
-	@keyframes svg-contact {
-		0% {
-			transform: rotate(-15deg);
-		}
-
-		100% {
-			transform: rotate(35deg);
-		}
+/***********Анимация для svg **************/
+@keyframes svg-contact {
+	0% {
+		transform: rotate(-15deg);
 	}
 
-	@keyframes social {
-		0% {
-			transform: scale(1.2) rotateY(-55deg);
-		}
+	100% {
+		transform: rotate(35deg);
+	}
+}
 
-		100% {
-			transform: scale(1.1) rotateY(55deg);
-		}
+@keyframes social {
+	0% {
+		transform: scale(1.2) rotateY(-55deg);
 	}
 
+	100% {
+		transform: scale(1.1) rotateY(55deg);
+	}
 }
