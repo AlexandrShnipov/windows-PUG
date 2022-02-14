@@ -16,12 +16,12 @@
 	background-color: #83AEAD;
 	color: #fff;
 	border: none;
-
+	
 	&:focus,
 	&:hover {
 		background-color: #fff;
 		color: #83AEAD;
-		filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
+		// filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 		border: 2px solid #2F3B3F;
 	}
 }
@@ -141,11 +141,11 @@
 	.btn,
 	.btn--link {
 		height: 5.5rem;
-		max-width: 22rem;	
+		max-width: 22rem;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		display: flex;
-		align-items:center;
+		align-items: center;
 
 		// @include media (xlg) {
 		// 	max-width: 21rem;
@@ -157,7 +157,7 @@
 		margin-right: 2.5rem;
 	}
 
-	.btn--link{
+	.btn--link {
 		text-align: center;
 	}
 }
