@@ -16,7 +16,7 @@
 	background-color: #83AEAD;
 	color: #fff;
 	border: none;
-	
+
 	&:focus,
 	&:hover {
 		background-color: #fff;
@@ -138,6 +138,12 @@
 	grid-area: button;
 	align-self: end;
 
+	@media(max-width:400px) {
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+	}
+
 	.btn,
 	.btn--link {
 		height: 5.5rem;
@@ -155,6 +161,10 @@
 	.btn {
 		filter: drop-shadow(10px 10px 20px rgba(131, 174, 173, 0.4));
 		margin-right: 2.5rem;
+
+		@media(max-width:400px) {
+			margin-right: 0;
+		}
 	}
 
 	.btn--link {
