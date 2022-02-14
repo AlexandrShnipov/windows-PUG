@@ -6,12 +6,12 @@
   &__grid {
     padding: 3rem 0rem 0 10rem;
 
-		@media(max-width:413px){
+		@media(max-width:25.8rem){
       padding-left: 0;
     };
 
 
-    @include media(xlg) {
+    @include media(lg) {
       padding-left: 17rem;
     }
 
@@ -36,14 +36,14 @@
         @include pos (absolute, $bottom:28rem, $left:-1rem);
       }
 
-      @include media (xlg) {
-        @include pos (absolute, $bottom:46rem, $right:-5rem);
+      @include media (lg) {
+        @include pos (absolute, $bottom:43rem, $left:-1rem);
         @include wh (100%, 6.5rem);
         max-width: 8.3rem;
       }
 
       @include media (xxl) {
-        @include pos (absolute, $bottom:50.5rem, $right:-5rem);
+        @include pos (absolute, $bottom:44rem, $left:-2rem);
         height: 8.9rem;
         max-width: 10.3rem;
       }
@@ -63,11 +63,11 @@
     top: -11.5rem;
     left: -13rem;
 
-    @media(max-width:413px){
+    @media(max-width:25.8rem){
    left: -3rem;
     }
 
-    @include media(xlg) {
+    @include media(lg) {
       @include font(4rem);
       padding-top: 2.5rem;
       padding-left: 26rem;
@@ -94,8 +94,7 @@
     }
 
     @include media(xxl) {
-      margin-bottom: 9.2rem;
-      max-width: 85rem;
+      margin-bottom: 9.2rem;     
       height: 57rem;
     }
   }
@@ -141,14 +140,14 @@
       @include pos (absolute, $bottom:25rem, $right:-3rem);
     }
 
-    @include media (xlg) {
-      @include pos (absolute, $bottom:43rem, $right:-5rem);
+    @include media (lg) {
+      @include pos (absolute, $bottom:40rem, $right:-5rem);
       height: 6.5rem;
       max-width: 8.3rem;
     }
 
     @include media (xxl) {
-      @include pos (absolute, $bottom:46rem, $right:-6rem);
+      @include pos (absolute, $bottom:40rem, $right:-7rem);
       height: 8.9rem;
       max-width: 10.3rem;
     }

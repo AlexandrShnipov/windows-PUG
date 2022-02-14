@@ -14,7 +14,7 @@
 		column-gap: 4rem;
 		width: 100%;
 
-		@media(max-width:413px) {
+		@media(max-width:25.8rem) {
 			display: flex;
 			flex-direction: column;
 			gap: 2rem;
@@ -29,7 +29,7 @@
 	&__flex {
 		@include flex ($flex-direction: column);
 
-		@media(max-width:413px) {
+		@media(max-width:25.8rem) {
 			align-items: center;
 		}
 
@@ -58,13 +58,6 @@
 		justify-self: center;
 		padding-top: 3.2rem;
 		align-items: center;
-
-		@media(max-width:413px) {
-			grid-column-start: 1;
-			grid-column-end: 2;
-			grid-row-start: 2;
-			grid-row-end: 3;
-		}
 	}
 
 	li,

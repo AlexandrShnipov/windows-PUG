@@ -1,22 +1,44 @@
 .principles {
-	margin-bottom: 10.6rem;
+	margin-bottom: 3.6rem;
+	padding-bottom: 7rem;
 
-	@include media (xl) {
-		padding-bottom: 9rem;
+	@include media (lg) {
+		margin-bottom: 6.7rem;
+		padding-bottom: 10rem;
 	}
 
-	& h2{
+	& h2 {
 		margin-bottom: 2rem;
+
+		@include media (lg) {
+			margin-bottom: 5rem;
+		}
 	}
 
 	// .principles__flex
 	&__flex {
-	
+		display: flex;
+	}
+
+	&__box-img {
+		display: none;
+
+		@include media(lg) {
+			display: block;
+			flex-basis: 48.4%;
+		}
 	}
 
 	// .principles__box-content
 	&__box-content {
 		@include flex ($flex-direction: column);
+		flex-grow: 1;
+
+		@include media(lg) {
+			flex-shrink: 0;
+			flex-basis: 51.6%;
+			margin-left: 3rem;
+		}
 	}
 
 	h3 {
@@ -24,9 +46,9 @@
 		color: #2F3B3F;
 		margin-bottom: 3rem;
 
-		@include media (xlg) {
-			@include font (2.4rem, 3.3rem);
-			margin-bottom: 3.8rem;
+		@include media (lg) {
+			font-size: 2.4rem;
+			margin-bottom: 3.9rem;
 		}
 	}
 
@@ -35,28 +57,16 @@
 		position: relative;
 
 		img {
-			width: 55.8rem;
 			border-radius: 5px;
-
-			@include media (xlg) {
-				width: 37rem;
-				height: 51.4rem;
-			}
 		}
 
 		&::after {
 			@include pseudo;
-			@include pos (absolute, $bottom: -1.8rem, $left: -2.5rem);
-			@include wh (13.2rem);
+			@include pos (absolute, $bottom: -1.5rem, $left: -1.5rem);
+			@include wh (8rem);
 			border: 2px solid #83AEAD;
 			border-radius: 10px;
 			z-index: -1;
-
-			@include media (xlg) {
-				@include wh (8.3rem, 6.3rem);
-				bottom: 1rem;
-				left: -1.6rem;
-			}
 		}
 	}
 
@@ -75,9 +85,10 @@
 			left: 2.5rem;
 			background-color: #83AEAD;
 
-			@include media (xlg) {
+			@include media (lg) {
 				height: 5rem;
 				top: -7.3rem;
+				left: 3.4rem;
 			}
 		}
 	}
@@ -92,7 +103,7 @@
 
 		// .svg-txt__block
 		&__block {
-			display: flex;	
+			display: flex;
 			// max-width: 60rem;
 			width: 100%;
 
@@ -127,6 +138,10 @@
 			@include flex (center, center);
 			transition: all 1s;
 
+			@include media (lg) {
+				@include wh (6.8rem);
+			}
+
 			&:hover,
 			&:focus {
 				transition: all 1s;
@@ -139,35 +154,28 @@
 
 			svg {
 				fill: #FFF;
-				max-width: 8rem;
-				height: 8rem;
+
+				@include media (lg) {
+					width: 3.2rem;
+					height: 3.2rem;
+				}
 			}
 		}
+	}
 
-		// .svg-txt__content
-		&__content {
-			@include flex ($flex-direction: column);
-			gap: 1rem;
-			// max-width: 20.5rem;
-			width: 58%;
+	.svg-txt__content {
+		@include flex ($flex-direction: column);
+		gap: 1rem;
+		// max-width: 20.5rem;
+		width: 58%;
 
-			@include media (xlg) {
-				gap: 2.5rem;
-			}
+		@include media(lg) {
+			gap: 2rem;
+			width: 65%;
+		}
 
-			h4 {
-				@include media (xlg) {
-					@include font (2.4rem, 3.3rem);
-				}
-			}
-
-			p {
-				@include font (1.2rem, 1.33);	
-
-				@include media (xlg) {
-					@include font (1.8rem, 2.5rem);			
-				}
-			}
+		@include media (xlg) {
+			gap: 2.5rem;
 		}
 	}
 }

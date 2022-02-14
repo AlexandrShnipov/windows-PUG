@@ -33,6 +33,10 @@
 		left: 50%;
     transform: translateX(-50%);
 
+		@media(max-width:25.8rem){
+			width: 100%;
+		}
+
 		input[type="text"] {
 			@include font (1.4rem, 1.36, 400);
 			font-family: "Nunito-Regular", sans-serif;
@@ -43,6 +47,10 @@
 			width: 100%;
 			border: none;
 			outline: none;
+
+			@media(max-width:25.8rem){
+				padding: 2rem 10rem 2rem 1rem;
+			}
 		}
 
 		.btn {
@@ -53,6 +61,10 @@
 			@include pos (absolute, $top: 50%, $right: 1.3rem);
 			transform: translateY(-50%);
 			border:2px solid transparent;
+
+			@media(max-width:25.8rem){
+				padding: 1rem;
+			}
 
 			&:hover{
 				border: 2px solid #2F3B3F;
