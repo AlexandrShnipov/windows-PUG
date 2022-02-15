@@ -28,12 +28,16 @@ h2.title--right {
     align-self: end;
     padding-right: 7.1rem;
 
-    @include media(md) {     
+    @include media(md) {
         padding-right: 20rem;
     }
 
-    @include media(lg){
-        font-size:3rem;
+    @include media(lg) {
+        font-size: 2.5rem;
+    }
+
+    @include media(xxl) {
+        font-size: 3rem;
     }
 
     &::after {

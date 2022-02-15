@@ -4,8 +4,23 @@
   padding-bottom: 4.3rem;
   margin-bottom: 6.2rem;
 
+  @include media (lg) {
+    margin-bottom: 10rem;
+    padding-top: 4.2rem;
+  }
+
+  @include media (xxl) {
+    margin-bottom: 20.5rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+  }
+
   & h2 {
     margin-bottom: 4rem;
+
+    @include media (lg) {
+      margin-bottom: 7rem;
+    }
   }
 
   &__items {
@@ -13,6 +28,9 @@
     justify-content: center;
     flex-wrap: wrap;
 
+    @include media (lg) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
@@ -21,10 +39,27 @@
     align-items: center;
     flex-basis: 50%;
     gap: 1.5rem;
-  }  
 
-  &__item:last-child{
+    @include media (lg) {
+      flex-basis: 33%;
+      gap: 2.5rem;
+    }
+
+    @include media (xxl) {
+      gap: 1.5rem;
+    }
+  }
+
+  &__item:last-child {
     margin-top: 3rem;
+
+    @include media (lg) {
+      margin-top: 0;
+    }
+  }
+
+  &__item:nth-child(2) {
+    position: relative;
   }
 
   &__item-img {
@@ -36,22 +71,70 @@
     align-items: center;
     justify-content: center;
     animation: scale 1s infinite;
-     }
 
-  &__item-img img {
+    @include media (lg) {
+      width: 7.5rem;
+      height: 7.5rem;
+    }
+
+    @include media (xxl) {
+      width: 10.9rem;
+      height: 10.9rem;
+    }
+  }
+
+  &__item-img .img--icon {
     width: auto;
     max-height: 67%;
-    
+  }
+
+  &__item .arrow {
+    display: none;
+
+    @include media (lg) {
+      display: block;
+      width: 1.7rem;
+      height: auto;
+      position: absolute;
+    }
+  }
+
+  &__item .arrow.arrow--left,
+  &__item .arrow.arrow--right {
+    top: 15%;
+  }
+
+  &__item .arrow.arrow--left {
+    right: 0;
+  }
+
+  &__item .arrow.arrow--right {
+    left: 0;
   }
 
   &__item-title {
-   
+    @include media (lg) {
+      @include font (2.5rem, 1.36, 700);
+    }
+
+    @include media (xxl) {
+      font-size: 3rem;
+    }
   }
 
   &__item-text {
     @include font(1.2rem, 1.33);
     text-align: center;
-    max-width: 16rem;    
+    max-width: 16rem;
+
+    @include media (lg) {
+      font-size: 2rem;
+      max-width: initial;
+    }
+
+    @include media (xxl) {
+      font-size: 2.2rem;
+    }
   }
 }
 
@@ -59,10 +142,12 @@
   0% {
     transform: scale(1);
   }
-  50%{
+
+  50% {
     transform: scale(1.05);
   }
-  100%{
+
+  100% {
     transform: scale(1);
   }
 }
