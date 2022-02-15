@@ -23,7 +23,13 @@ header,
 section,
 footer {
   width: 100%;
-} 
+}
+
+section,
+footer {
+  max-width: 144rem;
+  overflow-x: clip;
+}
 
 .wrapper {
   width: 100%;
@@ -78,4 +84,3 @@ footer {
   height: auto;
   max-width: 100%;
 }
-
