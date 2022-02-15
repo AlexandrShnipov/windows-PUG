@@ -2,19 +2,32 @@
   background-color: #fff;
   padding-top: 3.6rem;
 
+  @include media(lg) {
+    padding-top: 6.7rem;
+  }
+
+  @include media(xxl) {
+    padding-top: 7.5rem;
+  }
+
+
   h2 {
     margin-bottom: 4rem;
+
+    @include media(lg) {
+      margin-bottom: 5.4rem;
+    }
+
+    @include media(xxl) {
+      margin-bottom: 9rem;
+    }
   }
 
   h2.title--best {
     margin-top: 3rem;
-  //  align-self: end;
-  //  padding-right: 7.1rem;
 
-  //  &::after{
-  //    right: 0;
-  //    left: initial;
-  //  }
+    @include media(lg){
+      margin-top: 0;
+    }
   }
 }
-

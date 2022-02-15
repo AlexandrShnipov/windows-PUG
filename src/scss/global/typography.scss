@@ -32,6 +32,10 @@ h2.title--right {
         padding-right: 20rem;
     }
 
+    @include media(lg){
+        font-size:3rem;
+    }
+
     &::after {
         right: 0;
         left: initial;

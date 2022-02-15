@@ -57,6 +57,10 @@
 		@include media (lg){
 			font-size: 2.4rem;
 		}
+
+		@include media (xxl){
+			font-size: 3rem;          
+		}
 	}
 
 	p {
@@ -64,7 +68,11 @@
 		color: rgba(47, 59, 63, 0.8);
 
 		@include media (lg) {
-			@include font (1.8rem, 2.5rem);
+			font-size: 1.8rem;
+		}
+
+		@include media (xxl){
+			font-size: 2.4rem;
 		}
 	}
 }

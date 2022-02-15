@@ -129,7 +129,7 @@
 	transform: scale(1.2);
 }
 
-// about button
+// about button characteristics button
 .about__button,
 .characteristics__button {
 
@@ -144,7 +144,7 @@
 		gap: 1.5rem;
 	}
 
-	@include media(xxl){
+	@include media(xxl) {
 		justify-content: flex-start;
 	}
 
@@ -170,7 +170,7 @@
 			margin-right: 0;
 		}
 
-		@include media(xxl){
+		@include media(xxl) {
 			margin-right: 3rem;
 		}
 	}
@@ -180,8 +180,12 @@
 	}
 }
 
-@include media (lg){
-	.about__button{
+@include media (lg) {
+	.about__button {
 		align-self: start;
-	}	
+	}
+
+	.characteristics__button {
+		justify-content: start;
+	}
 }

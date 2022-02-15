@@ -13,6 +13,10 @@
 		@include media (lg) {
 			margin-bottom: 5rem;
 		}
+
+		@include media (xxl){
+			margin-bottom:7.1rem;
+		}
 	}
 
 	// .principles__flex
@@ -50,6 +54,11 @@
 			font-size: 2.4rem;
 			margin-bottom: 3.9rem;
 		}
+
+		@include media (xxl){
+			font-size:3rem;
+			margin-bottom:5rem;
+		}
 	}
 
 	// .princioles__box-img
@@ -67,6 +76,10 @@
 			border: 2px solid #83AEAD;
 			border-radius: 10px;
 			z-index: -1;
+
+			@include media (xxl){
+				@include wh (13.2rem);
+			}
 		}
 	}
 
@@ -90,6 +103,11 @@
 				top: -7.3rem;
 				left: 3.4rem;
 			}
+
+			@include media (xxl){
+			height: 10.9rem;
+			top: -8.5rem;
+			}
 		}
 	}
 
@@ -99,6 +117,10 @@
 
 		@include media (xlg) {
 			gap: 5.4rem;
+		}
+
+		@include media (xxl) {
+			gap: 6.4rem;
 		}
 
 		// .svg-txt__block
@@ -176,6 +198,11 @@
 
 		@include media (xlg) {
 			gap: 2.5rem;
+		}
+
+		@include media (xxl){
+			gap: 3rem;
+			width:67%;
 		}
 	}
 }
