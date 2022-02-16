@@ -7,15 +7,15 @@ section.measuring.cf
                         use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#window-form")
                 .measuring__content 
                     h2 Не знаете размер окна?
-                    p Или размеры не типовые?
+                        span Или размеры не типовые?
             .measuring__box
                 h2 Закажите 
-                    strong бесплатный замер
+                    span.bold бесплатный замер
                 form.form
-                    input._req(type="text" name='user-name' placeholder="Ваше имя" required="required")
-                    input._req.phone-input(type="text" name="user-phone" placeholder="Ваш телефон" required="required")
+                    input._req.input--name(type="text" name='user-name' placeholder="Ваше имя" required="required")
+                    input._req.input--phone(type="text" name="user-phone" placeholder="Ваш телефон" required="required")
                     .form__policy
                         input._req.chec#chec(type="checkbox" required="required" checked)
                         label.form-chec(for="chec") Согласен на обработку персональных данных в соответствии с 
-                                a(href="#!" target="_blank") правилами
+                            a(href="#!" target="_blank") правилами
                     button.btn-modal Отправить                    

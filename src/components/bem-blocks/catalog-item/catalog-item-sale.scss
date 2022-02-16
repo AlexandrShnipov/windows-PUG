@@ -1,6 +1,5 @@
 .card {
   @include flex ($flex-direction: column);
-  background-color: #83AEAD;
   margin: 0 0 2rem 0;
   border-radius: 10px 10px 0px 0px;
 
@@ -13,6 +12,7 @@
   &__content {
     @include flex ($flex-direction: column);
     padding: 2rem 2rem 1.5rem;
+    background-color: #83AEAD;
 
     @include media (xlg) {
       padding: 2.5rem 2.5rem 1.8rem 2.5rem;
@@ -80,7 +80,7 @@
     }
   }
 
-  // .catalog__price
+  // .card__price
   &__price {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -102,35 +102,35 @@
       @include media (xlg) {
         @include font (1.8rem)
       }
-    }
-  }
+    }  
 
-  &__price--sale {
+    // .card__price--sale {
 
-    h3 {
-      color: #2F3B3F;
-      background-color: #F6CA83;
-      width: 10rem;
-      padding: 4px 0 0 0;
-      border-radius: 4px;
-      line-height: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
+    //   h3 {
+    //     color: #2F3B3F;
+    //     background-color: #F6CA83;
+    //     width: 10rem;
+    //     padding: 4px 0 0 0;
+    //     border-radius: 4px;
+    //     line-height: 1;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     position: relative;
 
-      @include media (xlg) {
-        width: 15rem;
-      }
-    }
+    //     @include media (xlg) {
+    //       width: 15rem;
+    //     }
+    //   }
 
-    .old-price {
-      @include font (1.6rem, 1);
-      color: #2F3B3F;
-      display: inline-block;
-      position: absolute;
-      top: -1.5rem;
-      right: -3rem;
-    }
+    //   .old-price {
+    //     @include font (1.6rem, 1);
+    //     color: #2F3B3F;
+    //     display: inline-block;
+    //     position: absolute;
+    //     top: -1.5rem;
+    //     right: -3rem;
+    //   }
+    // }
   }
 }

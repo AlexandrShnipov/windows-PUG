@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>catalog</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./wp-content/themes/factory_windows/assets/css/main.css">
+    <link rel="stylesheet" href="./wp-content/themes/factory_windows/assets/fonts/fonts.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="#!">
+    <link rel="apple-touch-icon" sizes="60x60" href="#!">
+    <link rel="apple-touch-icon" sizes="72x72" href="#!">
+    <link rel="apple-touch-icon" sizes="76x76" href="#!">
+    <link rel="apple-touch-icon" sizes="114x114" href="#!">
+    <link rel="apple-touch-icon" sizes="120x120" href="#!">
+    <link rel="apple-touch-icon" sizes="144x144" href="#!">
+    <link rel="apple-touch-icon" sizes="152x152" href="#!">
+    <link rel="apple-touch-icon" sizes="180x180" href="#!">
+    <link rel="icon" type="image/png" sizes="192x192" href="#!">
+    <link rel="icon" type="image/png" sizes="32x32" href="#!">
+    <link rel="icon" type="image/png" sizes="96x96" href="#!">
+    <link rel="icon" type="image/png" sizes="16x16" href="#!">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="#!">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="wrap-feedback"></div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__flex"><a class="header__logo" href="/">
+              <svg width="66" height="16">
+                <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#logo"></use>
+              </svg></a>
+            <nav class="menu-top">
+              <ul>
+                <li><a class="active" href="">Главная</a></li>
+                <li><a href="">Доставка и оплата</a></li>
+                <li><a href="">Акции</a></li>
+              </ul>
+            </nav>
+            <form class="header__form" id="form">
+              <input class="_req" type="text" value="" placeholder="">
+              <button id="formBtn" type="button">
+                <svg width="15" height="15">
+                  <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#enter"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="header__burger">
+              <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span class="toggle menu"></span></button>
+              <div class="menu-mobile">
+                <div class="menu-mobile__phone">        <span>Ежедневно c 8:30 до 20:00 </span><a href="tel:84993501101">8(499)350-11-01</a></div>
+                <ul class="nav-menu"> 
+                  <li><a class="active" href="">
+                      <svg width="15" height="15">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#main"></use>
+                      </svg>Главная</a></li>
+                  <li><a href="">
+                      <svg width="15" height="15">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
+                      </svg> Каталог</a></li>
+                  <li><a href="">
+                      <svg width="15" height="15">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#about"></use>
+                      </svg> Акции</a></li>
+                  <li><a href="">
+                      <svg width="15" height="15">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
+                      </svg> Рассрочка</a></li>
+                  <li><a href="">
+                      <svg width="15" height="15">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
+                      </svg> Статьи</a></li>
+                  <li><a href="about.html">
+                      <svg width="15" height="15">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#contact"></use>
+                      </svg> О наших окнах   </a></li>
+                </ul>
+                <ul class="social">
+                  <li><a href="">
+                      <svg width="35" height="35">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-vk"></use>
+                      </svg></a></li>
+                  <li><a href="">
+                      <svg width="35" height="35">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-od"> </use>
+                      </svg></a></li>
+                  <li><a href="">
+                      <svg width="35" height="35">
+                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-instagram"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <h2 class="catalog__title">Каталог</h2>
+        <div class="button-box">
+          <button class="button-modal--open">Фильтр</button>
+        </div>
+        <div class="modal">
+          <div class="filter__wrap">
+            <button class="modal__button--closed"><img class="modal__button--closed-img" src="./wp-content/themes/factory_windows/assets/img/icons/filter-closed.png" alt="Закрыть" aria-label="Закрыть фильтр"></button>
+            <form class="filter__form">   
+              <div class="filter__form-item">
+                <div class="filter__form-item-wrap">
+                  <input type="checkbox" value="Sale" name="Sale" id="Sale"><span class="checkbox__span"></span>
+                  <label for="Sale">Скидки</label>
+                </div>
+              </div>
+              <div class="filter__form-item">
+                <h5 class="filter__form-item-title">Тип товара</h5>
+                <ul> 
+                  <li>     
+                    <input type="checkbox" value="Windows" name="Product1" id="Windous"><span class="checkbox__span"> </span>
+                    <label for="Windous">Окна</label>
+                  </li>
+                  <li>     
+                    <input type="checkbox" value="Dоors" name="Product2" id="Dоors"><span class="checkbox__span"> </span>
+                    <label for="Dоors">Двери</label>
+                  </li>
+                  <li>     
+                    <input type="checkbox" value="Balconies" name="Product3" id="Balconies"><span class="checkbox__span"> </span>
+                    <label for="Balconies">Балконы</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__form-item">
+                <h5 class="filter__form-item-title">Высота</h5>
+                <ul>
+                  <li><span>от</span>
+                    <input type="text" name="height-from">
+                  </li>
+                  <li><span>до</span>
+                    <input type="text" name="height-before">
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__form-item">
+                <h5 class="filter__form-item-title">Ширина</h5>
+                <ul>
+                  <li><span>от</span>
+                    <input type="text" name="width-from">
+                  </li>
+                  <li><span>до</span>
+                    <input type="text" name="width-before">
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__form-item">
+                <h5 class="filter__form-item-title">Цвет </h5>
+                <ul> 
+                  <li>     
+                    <input type="checkbox" value="White" name="Color1" id="White"><span class="checkbox__span"> </span>
+                    <label for="White">Белый</label>
+                  </li>
+                  <li>     
+                    <input type="checkbox" value="Wood" name="Color2" id="Wood"><span class="checkbox__span"> </span>
+                    <label for="Wood">Дерево</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="filter__form-item">
+                <h5 class="filter__form-item-title">Цена</h5>
+                <ul>
+                  <li><span>от</span>
+                    <input type="text" name="price-from">
+                  </li>
+                  <li><span>до</span>
+                    <input type="text" name="price-before">
+                  </li>
+                </ul>
+              </div>
+              <div class="form__buttons-wrap">
+                <button class="filter__button-submit" type="submit">Применить</button>
+                <button class="filter__button-reset" type="reset">Сбросить фильтры      </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="catalog-items__box">
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price card__price--sale">
+                <h3>2 960 ₽ <span class="old-price">4 430 ₽</span></h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price">
+                <h3>4 430 ₽</h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price">
+                <h3>4 430 ₽</h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price">
+                <h3>4 430 ₽</h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price">
+                <h3>4 430 ₽</h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price">
+                <h3>4 430 ₽</h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price">
+                <h3>4 430 ₽</h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price">
+                <h3>4 430 ₽</h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+            <div class="card__content">
+              <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
+              <div class="card__options">
+                <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
+              </div>
+              <div class="card__price">
+                <h3>4 430 ₽</h3><span>В наличие 6шт</span>
+                <button class="btn-modal">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="measuring cf">
+          <div class="container"> 
+            <div class="measuring__wrapper"> 
+              <div class="measuring__wrap">
+                <div class="measuring__box-img">
+                  <svg width="98" height="69">
+                    <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#window-form"></use>
+                  </svg>
+                </div>
+                <div class="measuring__content"> 
+                  <h2>Не знаете размер окна?<span>Или размеры не типовые?</span></h2>
+                </div>
+              </div>
+              <div class="measuring__box">
+                <h2>Закажите <span class="bold">бесплатный замер</span></h2>
+                <form class="form">
+                  <input class="_req input--name" type="text" name="user-name" placeholder="Ваше имя" required="required">
+                  <input class="_req input--phone" type="text" name="user-phone" placeholder="Ваш телефон" required="required">
+                  <div class="form__policy">
+                    <input class="_req chec" id="chec" type="checkbox" required="required" checked>
+                    <label class="form-chec" for="chec">Согласен на обработку персональных данных в соответствии с <a href="#!" target="_blank">правилами</a></label>
+                  </div>
+                  <button class="btn-modal">Отправить                    </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="container">
+            <div class="feedback__content">
+              <h2>Помогите нам стать лучше</h2>
+              <p>Вы можете оставить отзыв о нашем сайте<br>или задать вопрос, чтобы мы могли лучше работать для вас</p>
+              <form class="feedback__form">
+                <input class="_req" type="text" value="" placeholder="Я считаю...">
+                <button class="btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__content">
+            <div class="container">
+              <div class="footer__wrapper">
+                <div class="footer__flex">
+                  <h5 class="footer__item-title">О компании</h5>
+                  <ul class="footer__about">
+                    <li>Бесплатная доставка по Москве<br><a href="">область <span>бесплатной </span>доставки</a></li>
+                    <li><a href="">Статьи об окнах</a></li>
+                    <li><a href="">График работы</a></li>
+                    <li><a href="">О нас </a></li>
+                  </ul>
+                </div>
+                <div class="footer__flex">
+                  <h5 class="footer__item-title">Покупателям</h5>
+                  <ul class="footer__shoppers">
+                    <li><a href="">Каталог </a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Помощь</a></li>
+                  </ul>
+                </div>
+                <div class="footer__flex">
+                  <h5 class="footer__item-title">Контакты</h5>
+                  <ul class="footer__contact">
+                    <li class="contact"><a href="https://yandex.ru/maps/?rtext=~55.733219,37.713872&amp;amp;rtt=mt" target="_blank">
+                        <svg width="20" height="20">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#location"></use>
+                        </svg>ул. Нижегородская, 29-33с7</a></li>
+                    <li class="tel"><a href="tel:84993501101">
+                        <svg width="20" height="20">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#telephone"></use>
+                        </svg>8(499)350-11-01</a></li>
+                  </ul>
+                </div>
+                <div class="footer__flex">
+                  <h5 class="footer__item-title footer__item-title--last-child">Присоедининяйся к нам</h5>
+                  <ul class="social">
+                    <li><a href="">
+                        <svg width="35" height="35">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-vk"></use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg width="35" height="35">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-od"> </use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg width="35" height="35">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-instagram"></use>
+                        </svg></a></li>
+                  </ul>
+                  <button class="btn-modal">Заказать звонок</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./wp-content/themes/factory_windows/assets/js/main.js"></script>
+  </body>
+</html>
