@@ -5,6 +5,10 @@
 		width: 100%;
 		background-color: #83AEAD;
 		padding: 7.4rem 0 4.1rem;
+
+		@include media(lg) {
+			padding: 14.1rem 0 5.2rem;
+		}
 	}
 
 	// .footer__wrapper
@@ -20,9 +24,13 @@
 			gap: 2rem;
 		}
 
-		@include media (xl) {
-			gap: 5rem;
+		@include media (lg) {
+			grid-template-columns: repeat(4ft);
 		}
+
+		// @include media (xl) {
+		// 	gap: 5rem;
+		// }
 	}
 
 	// .footer__flex
@@ -38,19 +46,35 @@
 			font-family: "Nunito-Bold", sans-serif;
 			color: #000000;
 			margin-bottom: 1.8rem;
+
+			@include media (lg) {
+				font-size: 1.8rem;
+				margin-bottom: 3.1rem;
+			}
+
 		}
 
 		h5.footer__item-title.footer__item-title--last-child {
 			font-size: 1.5rem;
+
+			@include media (lg) {
+				font-size: 1.8rem;
+				margin-bottom: 3.1rem;
+			}
 		}
 	}
 
-	&__flex ul {
+	&__flex ul:nth-last-child(1) {
 		display: flex;
 		gap: .8rem;
+
+		@include media (lg) {
+			gap: 2.8rem;
+		}
 	}
 
 	&__flex:last-child {
+		display: flex;
 		grid-column-start: 1;
 		grid-column-end: 4;
 		grid-row-start: 2;
@@ -58,6 +82,14 @@
 		justify-self: center;
 		padding-top: 3.2rem;
 		align-items: center;
+
+		@include media(lg) {
+			grid-column-start: 4;
+			grid-column-end: 5;
+			grid-row-start: 1;
+			grid-row-end: 2;
+			padding-top: 0;
+		}
 	}
 
 	li,
@@ -66,6 +98,10 @@
 		font-family: "Nunito-Regular", sans-serif;
 		color: rgba(47, 59, 63, 0.8);
 		transition: all 0.4s;
+
+		@include media(lg) {
+			font-size: 1.4rem;
+		}
 	}
 
 	a {
@@ -107,6 +143,10 @@
 			&:first-child {
 				display: none;
 
+				@include media (lg) {
+					display: block;
+				}
+
 				a {
 					border-bottom: 1px solid rgba(47, 59, 63, 0.8);
 					transition: all 0.4s;
@@ -130,6 +170,11 @@
 		@media(max-width:413px) {
 			align-items: center;
 		}
+
+		@include media(lg) {
+			gap: 2rem;
+		}
+
 	}
 
 	// .footer__contact
@@ -177,6 +222,14 @@
 		margin-top: 3rem;
 		align-self: center;
 		width: fit-content;
+		height: fit-content;
+
+		@include media (lg) {
+			margin-top: 8.2rem;
+			align-self: end;
+			font-size: 1.8rem;
+			padding: 1.8rem 1rem;
+		}
 	}
 
 	.social {

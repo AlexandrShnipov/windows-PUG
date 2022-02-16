@@ -64,6 +64,10 @@
 	align-self: end;
 	justify-self: flex-end;
 
+@include media (lg){
+	
+}
+
 	&:hover,
 	&:focus {
 		box-shadow: 10px 10px 20px #2F3B3F;

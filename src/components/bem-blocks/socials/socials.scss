@@ -1,11 +1,9 @@
 .social {
 	@include flex (space-between, center);
 	gap: 5.5rem;
-	max-width: 21.4rem;
 	border-top: 1px solid #2F3B3F;
 	padding-top: 2.5rem;
-	align-self: flex-start;
-	margin-left: 2rem;
+	align-self: flex-start;	
 
 	@media(max-width:25.8rem){
 		align-self:center;
@@ -16,9 +14,6 @@
 		height: 3.5rem;
 	}
 
-	li+li{
-		margin-left: 6.5rem;
-	}
 
 	a {
 		svg {
