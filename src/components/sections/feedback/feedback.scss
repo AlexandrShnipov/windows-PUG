@@ -2,6 +2,10 @@
 	z-index: 1;
 	padding-bottom: 6.5rem;
 
+	@include media (lg) {
+		padding-bottom: 13rem;
+	}
+
 
 
 	// .feedback__content
@@ -14,6 +18,10 @@
 			align-self: center;
 			padding: 0;
 
+			@include media (lg) {
+				margin-bottom: 3rem;
+			}
+
 			&::after {
 				display: none;
 			}
@@ -22,19 +30,27 @@
 		p {
 			@include font (1.3rem, 1.38, $text-align: center);
 			color: rgba(47, 59, 63, 0.8);
+
+			@include media (lg) {
+				font-size: 2.2rem;
+			}
 		}
 	}
 
 	// .feedback__form
 	&__form {
 		position: absolute;
-		width: 85.3%;		
-		bottom: -9.5rem;
+		width: 85.3%;
+		bottom: -9rem;
 		left: 50%;
-    transform: translateX(-50%);
+		transform: translateX(-50%);
 
-		@media(max-width:25.8rem){
+		@media(max-width:25.8rem) {
 			width: 100%;
+		}
+
+		@include media (lg) {
+			bottom: -17rem;
 		}
 
 		input[type="text"] {
@@ -48,8 +64,13 @@
 			border: none;
 			outline: none;
 
-			@media(max-width:25.8rem){
-				padding: 2rem 10rem 2rem 1rem;
+			@media(max-width:25.8rem) {
+				padding: 2rem 10rem 2rem 1rem;			
+			}
+
+			@include media (lg) {
+				padding: 3.5rem 19rem 3.5rem 2rem;
+				font-size: 2.2rem;
 			}
 		}
 
@@ -60,13 +81,18 @@
 			box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
 			@include pos (absolute, $top: 50%, $right: 1.3rem);
 			transform: translateY(-50%);
-			border:2px solid transparent;
+			border: 2px solid transparent;
 
-			@media(max-width:25.8rem){
+			@media(max-width:25.8rem) {
 				padding: 1rem;
 			}
 
-			&:hover{
+			@include media (lg) {
+				font-size: 2.2rem;
+				padding: 1.5rem 4.2rem;
+			}
+
+			&:hover {
 				border: 2px solid #2F3B3F;
 			}
 		}
