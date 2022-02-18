@@ -1,3 +1,15 @@
+h1 {
+    @include font (2.2rem, 1.36, 700);
+
+    @include media (lg) {
+        font-size: 4rem;
+    }
+
+    @include media (xxl) {
+        font-size: 5rem;
+    }
+}
+
 h2 {
     @include font (2rem, 1.35, 800, left);
     font-family: "Nunito-ExtraBold", sans-serif;

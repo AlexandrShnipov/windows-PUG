@@ -1,14 +1,18 @@
 .banner {
-  &__content {
+  margin-bottom: 7rem;
+
+  &__content-about {
     position: relative;
   }
 
   &__grid {
     padding: 3rem 0rem 0 10rem;
 
-		@media(max-width:25.8rem){
+    @media(max-width:25.8rem) {
       padding-left: 0;
-    };
+    }
+
+    ;
 
 
     @include media(lg) {
@@ -63,8 +67,8 @@
     top: -11.5rem;
     left: -13rem;
 
-    @media(max-width:25.8rem){
-   left: -3rem;
+    @media(max-width:25.8rem) {
+      left: -3rem;
     }
 
     @include media(lg) {
@@ -87,14 +91,8 @@
   }
 
   &__img {
-    margin-bottom: 4.1rem;
-
-    @include media(md) {
-      margin-bottom: 7.3rem;
-    }
 
     @include media(xxl) {
-      margin-bottom: 9.2rem;     
       height: 57rem;
     }
   }
@@ -158,6 +156,111 @@
       border-color: #116988;
     }
   }
+}
+
+//! home
+
+.banner-home {
+
+  .banner__box-home {
+    &::before {
+      bottom: -.3rem;
+      right: -3rem;
+      height: 3.2rem;
+      width: 4.1rem;
+
+      @include media(lg) {
+        height: 6.5rem;
+        width: 8.3rem;
+        bottom: -.5rem;
+      }
+
+      @include media (xxl) {
+        height: 8.9rem;
+        width: 10.3rem;
+        bottom: -2rem;
+        right: -7rem;
+      }
+    }
+  }
+
+  .banner__link-home {
+    bottom: -1.8rem;
+    right: -3rem;
+    height: 3.2rem;
+    width: 4.1rem;
+    background-size: 33% auto;
+
+    @include media(lg) {
+      bottom: -3.5rem;
+      right: -5rem;
+      height: 6.5rem;
+      width: 8.3rem;
+    }
+
+    @include media (xxl) {
+      height: 8.9rem;
+      width: 10.3rem;
+      bottom: -6.5rem;
+      right: -7rem;
+    }
+  }
 
 
+  &__content {
+    padding: 1rem 1.3rem;
+    position: static;
+  }
+
+  h1 {
+    top: 24%;
+    padding: 1.3rem;
+
+    @include media(lg) {
+      top: 10rem;
+      left: -43rem;
+      padding: 2.25rem 8rem 2.35rem 27.7rem;
+      min-width: 80rem;
+    }
+
+    @include media(xxl) {
+      top: 11rem;
+      left: -66rem;
+      padding-right: 6rem;
+      padding-left: 34rem;
+    }
+
+    &::after {
+      position: absolute;
+      content: " ";
+      background-color: #fff;
+      height: 1px;
+      right: 14.6rem;
+      bottom: 8.2rem;
+      width: 47%;
+
+      @include media(xxl) {
+        right: 14rem;
+        bottom: 12.2rem;
+        width: 40%;
+      }
+    }
+  }
+
+
+
+  span {
+    display: none;
+    @include font (3rem, 1.37);
+
+    @include media(lg) {
+      display: block;
+      padding-top: 4.5rem;
+    }
+
+    @include media (xxl) {
+      font-size: 4rem;
+      padding-top: 5.6rem;
+    }
+  }
 }
