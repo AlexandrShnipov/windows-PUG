@@ -51,7 +51,7 @@
 			padding-left: 0;
 			margin-bottom: 2rem;
 
-			@include media (lg) {
+			@include media (md) {
 				font-size: 2.6rem;
 				margin-bottom: 0;
 			}
@@ -71,7 +71,7 @@
 			display: block;
 			padding-top: .5rem;
 
-			@include media (lg) {
+			@include media (md) {
 				font-size: 2.2rem;
 			}
 
@@ -91,7 +91,7 @@
 			font-family: "Nunito-SemiBold", sans-serif;
 			padding-left: 0;
 
-			@include media (lg) {
+			@include media (md) {
 				font-size: 3rem;			
 			}
 
@@ -125,13 +125,12 @@
 			color: rgba(0, 0, 0, 0.3);
 			padding: .6rem 2rem;
 			width: 100%;
-			height: fit-content;
 			background-color: #fff;
 			border-radius: 5px;
 			border: none;
 			outline: none;
 
-			@include media (lg) {
+			@include media (md) {
 				font-size: 1.8rem;
 				padding: 1rem;
 			}
@@ -162,7 +161,7 @@
 			width: fit-content;
 			justify-self: center;
 
-			@include media (lg) {
+			@include media (md) {
 				grid-column-start: 3;
 				grid-column-end: 4;
 				grid-row-start: 1;
@@ -196,7 +195,7 @@
 			padding-left: 1.8rem;
 			position: relative;
 
-			@include media (lg){
+			@include media (md){
 				font-size: 1.2rem;
 			}
 

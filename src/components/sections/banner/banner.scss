@@ -12,11 +12,8 @@
       padding-left: 0;
     }
 
-    ;
-
-
     @include media(lg) {
-      padding-left: 17rem;
+      padding-left: 19rem;
     }
 
     @include media(xxl) {
@@ -29,12 +26,11 @@
 
     &::before {
       content: '';
-      @include pos (absolute, $bottom:13.5rem, $left:-1rem);
+      @include pos (absolute, $bottom:13rem, $left:-1rem);
       @include wh (100%, 5.5rem);
       max-width: 4.1rem;
       border: 1px solid #83AEAD;
       border-radius: 10px;
-      // z-index: -1;
 
       @include media (md) {
         @include pos (absolute, $bottom:28rem, $left:-1rem);
@@ -54,18 +50,21 @@
     }
   }
 
+
   &__content h1 {
     color: #fff;
-    @include font(2rem, 1.35, 700);
+    font-size: 2rem;
+    line-height: 1.35;
+    font-weight: 700;
     background-color: #83AEAD;
-    max-width: 19rem;
+    max-width: 22rem;
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 4rem;
-    padding-left: 3rem;
+    padding-left: 4rem;
     position: absolute;
-    top: -11.5rem;
-    left: -13rem;
+    top: -7.5rem;
+    left: -15rem;
 
     @media(max-width:25.8rem) {
       left: -3rem;
@@ -77,7 +76,7 @@
       padding-left: 26rem;
       padding-bottom: 2.6rem;
       max-width: 68rem;
-      top: -50.5rem;
+      top: -44rem;
       left: -44rem;
     }
 
@@ -87,6 +86,7 @@
       padding-left: 23rem;
       padding-bottom: 4rem;
       max-width: 68rem;
+      left: -54rem;
     }
   }
 
@@ -101,16 +101,16 @@
     @include font(1rem, 1.4);
     min-width: 25rem;
     width: 100%;
-    margin-bottom: 7rem;
+    padding-top: 4.1rem;
 
     @include media(md) {
       @include font(2rem, 1.6);
-      margin-bottom: 10rem;
+      padding-top: 7.2rem;
     }
 
     @include media(xxl) {
       @include font(2.4rem, 1.33);
-      margin-bottom: 13rem;
+      padding-top: 9.2rem;
     }
   }
 
@@ -132,16 +132,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../img/icons/arrow-white.svg);
+    background-size: 49% auto;
     transform: translate(-50%, -50%);
 
     @include media (md) {
-      @include pos (absolute, $bottom:25rem, $right:-3rem);
+      @include pos (absolute, $bottom:25rem);
     }
 
     @include media (lg) {
       @include pos (absolute, $bottom:40rem, $right:-5rem);
       height: 6.5rem;
       max-width: 8.3rem;
+      background-size: 33% auto;
+
     }
 
     @include media (xxl) {
@@ -157,6 +160,8 @@
     }
   }
 }
+
+
 
 //! home
 
@@ -214,7 +219,10 @@
 
   h1 {
     top: 24%;
-    padding: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    left: -15rem;
+    width: 25rem;
 
     @include media(lg) {
       top: 10rem;
@@ -238,6 +246,11 @@
       right: 14.6rem;
       bottom: 8.2rem;
       width: 47%;
+      display: none;
+
+      @include media (lg){
+        display: block;
+      }
 
       @include media(xxl) {
         right: 14rem;

@@ -1,5 +1,5 @@
 h1 {
-    @include font (2.2rem, 1.36, 700);
+    @include font (2.2rem, 1.37, 700);
 
     @include media (lg) {
         font-size: 4rem;
@@ -35,16 +35,17 @@ h2 {
     }
 }
 
-h2.title--right {
+h3.title--right {
     @include font(1.5rem, 1.33, 800);
     align-self: end;
     padding-right: 7.1rem;
+    position: relative;
 
     @include media(md) {
         padding-right: 20rem;
     }
 
-    @include media(lg) {
+    @include media(md) {
         font-size: 2.5rem;
     }
 
@@ -53,8 +54,14 @@ h2.title--right {
     }
 
     &::after {
-        right: 0;
-        left: initial;
+        @include pseudo;
+        @include wh (5rem, 2px);
+        @include pos (absolute, $bottom: 49%, $right: 0);
+        background-color: rgba(24, 24, 24, 0.5);
+
+        @include media(md) {
+            @include wh (17rem, 2px);
+        }
     }
 }
 
@@ -64,10 +71,18 @@ h3 {
     // color: #FFF;
 }
 
-h4 {
-    @include font (3rem, 4.1rem, 700, left);
-    font-family: "Nunito-Bold", sans-serif;
-    color: #2F3B3F;
+// h4 {
+//     @include font (3rem, 4.1rem, 700, left);
+//     font-family: "Nunito-Bold", sans-serif;
+//     color: #2F3B3F;
+// }
+
+h4{
+    @include font(1.5rem, 1, 700);
+
+    @include media (md){
+        font-size: 3rem;
+    }
 }
 
 h5 {

@@ -1,0 +1,9 @@
+.why-we {
+  margin-bottom: 7rem;
+}
+.why-we h2 {
+  margin-bottom: 3rem;
+}
+.why-we__content {
+  display: flex;
+}

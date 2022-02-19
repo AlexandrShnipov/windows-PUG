@@ -72,7 +72,7 @@
     justify-content: center;
     animation: scale 1s infinite;
 
-    @include media (lg) {
+    @include media (md) {
       width: 7.5rem;
       height: 7.5rem;
     }
@@ -113,7 +113,7 @@
   }
 
   &__item-title {
-    @include media (lg) {
+    @include media (md) {
       @include font (2.5rem, 1.36, 700);
     }
 
@@ -127,9 +127,9 @@
     text-align: center;
     max-width: 16rem;
 
-    @include media (lg) {
+    @include media (md) {
       font-size: 2rem;
-      max-width: initial;
+      max-width: 35rem;
     }
 
     @include media (xxl) {

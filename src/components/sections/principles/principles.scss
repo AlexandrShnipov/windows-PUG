@@ -14,8 +14,8 @@
 			margin-bottom: 5rem;
 		}
 
-		@include media (xxl){
-			margin-bottom:7.1rem;
+		@include media (xxl) {
+			margin-bottom: 7.1rem;
 		}
 	}
 
@@ -29,7 +29,8 @@
 
 		@include media(lg) {
 			display: block;
-			flex-basis: 48.4%;
+			flex-basis: 43%;
+			flex-shrink: 1;
 		}
 	}
 
@@ -39,9 +40,13 @@
 		flex-grow: 1;
 
 		@include media(lg) {
-			flex-shrink: 0;
-			flex-basis: 51.6%;
+			flex-shrink: 1;
+			flex-basis: 57%;
 			margin-left: 3rem;
+		}
+
+		@include media (xxl){
+			margin-left: 5rem;
 		}
 	}
 
@@ -50,14 +55,14 @@
 		color: #2F3B3F;
 		margin-bottom: 3rem;
 
-		@include media (lg) {
+		@include media (md) {
 			font-size: 2.4rem;
 			margin-bottom: 3.9rem;
 		}
 
-		@include media (xxl){
-			font-size:3rem;
-			margin-bottom:5rem;
+		@include media (xxl) {
+			font-size: 3rem;
+			margin-bottom: 5rem;
 		}
 	}
 
@@ -77,7 +82,7 @@
 			border-radius: 10px;
 			z-index: -1;
 
-			@include media (xxl){
+			@include media (xxl) {
 				@include wh (13.2rem);
 			}
 		}
@@ -100,13 +105,13 @@
 
 			@include media (lg) {
 				height: 5rem;
-				top: -5rem;
+				top: -6rem;
 				left: 3.4rem;
 			}
 
-			@include media (xxl){
-			height: 10.9rem;
-			top: -8.5rem;
+			@include media (xxl) {
+				height: 8.9rem;
+				top: -10rem;
 			}
 		}
 	}
@@ -114,9 +119,11 @@
 	.svg-txt {
 		padding: 0;
 		gap: 4.9rem;
+		display: flex;
+		flex-direction: column;
 
 		@include media (lg) {
-			gap: 4.6 rem;
+			gap: 4.6rem;
 		}
 
 		@include media (xxl) {
@@ -126,7 +133,8 @@
 		// .svg-txt__block
 		&__block {
 			display: flex;
-			// max-width: 60rem;
+			flex-direction: row;
+			gap: 4.5rem;
 			width: 100%;
 
 			&:hover,
@@ -160,7 +168,7 @@
 			@include flex (center, center);
 			transition: all 1s;
 
-			@include media (lg) {
+			@include media (md) {
 				@include wh (6.8rem);
 			}
 
@@ -191,14 +199,30 @@
 		// max-width: 20.5rem;
 		width: 58%;
 
-		@include media(lg) {
+		@include media(md) {
 			gap: 2rem;
-			width: 65%;
+			width: 74%;
 		}
 
-		@include media (xxl){
+		@include media (xxl) {
 			gap: 3rem;
-			width:67%;
+			width: 62%;
+		}
+
+		h4 {
+			@include media(md) {
+				font-size: 2.4rem;
+			}
+
+			@include media(xxl) {
+				font-size: 3rem;
+			}
+		}
+
+		p{
+			@include media(xxl){
+				font-size: 2.2rem;
+			}
 		}
 	}
 }

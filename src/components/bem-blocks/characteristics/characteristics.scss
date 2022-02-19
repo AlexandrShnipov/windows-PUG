@@ -1,6 +1,6 @@
 .characteristics__wrapper {
 
-  @include media(lg) {
+  @include media(md) {
     margin-bottom: 7rem;
   }
 
@@ -87,13 +87,13 @@
     margin-bottom: 1.5rem;
     position: relative;
 
-    @include media(lg) {
-      font-size: 3rem;
-      max-width: 30rem;
+    @include media(md) {
+      font-size: 3rem;     
     }
 
     @include media(xxl) {
       font-size: 3.5rem;
+      max-width: 30rem;
     }
 
     &::after {
@@ -116,8 +116,12 @@
     @include font(1.2rem, 1.33);
     margin-bottom: 3rem;
 
-    @include media (lg) {
+    @include media (md) {
       font-size: 2.2rem;
+
+    }
+
+    @include media (lg) {
       margin-bottom: 0;
     }
 

@@ -1,15 +1,26 @@
 .svg-txt {
-	@include flex(space-between, $flex-wrap: wrap);
-	width: 100%;
-	// gap: 3rem;
-	padding: 7.2rem 0 0;
+	display: flex;
+	gap: 3rem;
+
+	@include media(lg) {
+		gap: 5rem;
+	}
+
 
 	// .svg-txt__block
 	&__block {
-		// max-width: 36rem;
-		@include flex ();
-		align-items:center;
-		gap: 3rem;
+		display: flex;
+		flex-direction: column;
+		flex-basis: 33%;
+		flex-shrink: 1;
+		gap: 1rem;
+
+		@include media(lg) {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 3rem;
+
+		}
 
 		&:hover,
 		&:focus {
@@ -41,9 +52,13 @@
 	}
 
 	svg {
-		max-width: 3.5rem;
+		max-width: 2rem;
 		transition: all 1s;
 		height: 100%;
+
+		@include media(md) {
+			max-width: 3.5rem;
+		}
 	}
 
 	&__content {
@@ -51,28 +66,12 @@
 		gap: 1.8rem;
 	}
 
-	h4 {
-		@include font (1.5rem, 1.33);
-
-		@include media (lg){
-			font-size: 2.4rem;
-		}
-
-		@include media (xxl){
-			font-size: 3rem;          
-		}
-	}
-
 	p {
 		@include font (1.2rem, 1.33);
 		color: rgba(47, 59, 63, 0.8);
 
-		@include media (lg) {
-			font-size: 1.8rem;
-		}
-
-		@include media (xxl){
-			font-size: 2.4rem;
+		@include media (md) {
+			font-size: 2rem;
 		}
 	}
 }
