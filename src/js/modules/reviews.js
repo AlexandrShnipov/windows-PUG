@@ -16,34 +16,25 @@ export default function reviews() {
 				pageUpDown: true, // управление клавиатурой
 			},
 			// Активный слайд по центру
-			centerdSlides: true,
+			//centerdSlides: true,
 			// Бесконечный слайд
 			loop: false,
 			// Скорость прокрутки
 			speed: 400,
+			//autoHeight: true,
+			// Колличество слайдов для показа
+			slidesPerView: 1,
+			centerdSlides: true,
+			//отключение если слайдов меньше чем нужно
+			watchOverflow: true,
 
-			breakpoints: {
-				// when window width is <= 320px
-				320: {
-					autoHeight: true,
-					// Колличество слайдов для показа
-					centerdSlides: true,
-					slidesPerView: 1
-
-				},
-				// when window width is <= 480px
-				414: {
-					centerdSlides: true,
-					slidesPerView: 1
-				},
+			breakpoints: {		
 				768: {
 					centerdSlides: true,
-					slidesPerView: 1
-				},
-				1200: {
-					centerdSlides: true,
-					slidesPerView: 2
-				}
+					slidesPerView: 2,
+					centerdSlides: false,
+					spaceBetween: 30
+				}			
 			}
 		});
 	}
