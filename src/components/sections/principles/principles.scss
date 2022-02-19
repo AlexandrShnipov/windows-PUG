@@ -1,10 +1,8 @@
 .principles {
-	margin-bottom: 3.6rem;
-	padding-bottom: 7rem;
+	margin-bottom: 7rem; 
 
 	@include media (lg) {
-		margin-bottom: 6.7rem;
-		padding-bottom: 10rem;
+		margin-bottom: 10rem;		
 	}
 
 	& h2 {
@@ -102,6 +100,10 @@
 			top: -4.3rem;
 			left: 2.5rem;
 			background-color: #83AEAD;
+
+			@include media (md){
+				left: 3.5rem;
+			}
 
 			@include media (lg) {
 				height: 5rem;
