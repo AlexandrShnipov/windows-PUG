@@ -200,6 +200,16 @@
 	}
 }
 
+.about__button .btn,
+.characteristics__button .btn {
+	border: 2px solid transparent;
+}
+
+.about__button .btn:hover,
+.characteristics__button .btn:hover {
+	border: 2px solid #000;
+}
+
 @include media (lg) {
 	.about__button {
 		align-self: start;
