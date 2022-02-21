@@ -1,12 +1,13 @@
 // мобильное меню
 .menu-mobile {
 	display: none;
-	border: 1px solid #2F3B3F;
-	border-top-left-radius: 0.5rem;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0.5rem;
-	border-bottom-left-radius: 0.5rem;
 
+	&__border{
+		position: absolute;
+		top: -5rem;
+    right: 0;
+    z-index: -1;
+	}
 
 	&__phone {
 		margin-bottom: 2rem;
@@ -40,20 +41,15 @@
 	
 
 	&--open {
-		@include pos (absolute, 3.5rem, 0, $right: 0);
+		@include pos (absolute, 4rem, 0, $right: -1.1rem);
 		@include flex ($flex-direction: column);
-		@include wh (29.3rem, 58.8rem);
-
+		@include wh (29.5rem, 59.6rem);
 		padding-top: 2rem;
-		background-color: #fff;
 
-		@include media (sm) {
-			width: 25rem;
-		}
 
 		.nav-menu {
 			@include flex ($flex-direction: column);
-			margin-bottom: 4.7rem;
+			margin-bottom: 4rem;
 			gap: 2rem;
 			align-self: flex-start;
 			width: 100%;
@@ -100,6 +96,13 @@
 			}
 		}
 
+	}
+}
+
+// social
+.menu-mobile {
+	.social{
+		margin-left: 4.5rem;
 	}
 }
 
