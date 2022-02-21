@@ -1,16 +1,100 @@
+//! modal
+
+.modal-burger {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	background-color: rgba(47, 59, 63, 0.5);
+	z-index: 10;
+	display: none;
+}
+
+//!modal
+
 // мобильное меню
 .menu-mobile {
+	@include pos (absolute, 4rem, 0, $right: -1rem);
+	// @include flex ($flex-direction: column);
+	@include wh (29.5rem, 59.6rem);
+	padding-top: 1rem;
+	z-index: 11;
 	display: none;
 
-	&__border{
+	&__border {
 		position: absolute;
 		top: -5rem;
-    right: 0;
-    z-index: -1;
+		right: 0;
+		z-index: -1;
+	}
+
+	.nav-menu {
+		@include flex ($flex-direction: column);
+		gap:.5rem;
+		margin-bottom: 2rem;
+		align-self: flex-start;
+		width: 100%;
+	}
+
+	.nav-menu li {
+		width: 100%;
+		transition: all 0.3s;
+
+		&:nth-child(6) {
+			margin-bottom: 1rem;
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: ' ';
+				left: 4.5rem;
+				right: 3.5rem;
+				height: 1px;			
+				background-color: #2F3B3F;
+			}
+		}
+
+		svg {
+			fill: #2F3B3F;
+			@include wh (1.5rem);
+			display: inline-block;
+			margin-right: 1rem;
+			transform: translate(0px, 2px);
+		}
+
+		a {
+			@include font (1.4rem, 1.9rem, 400, left);
+			font-family: "Nunito-Regular", sans-serif;
+			color: #211E1E;
+			padding: 1.5rem 0 1.5rem 2rem;
+
+			width: 100%;
+			display: block;
+
+			&:active {
+				border-right: 9px solid #c8f5ff;
+			}
+		}
+
+		&:hover,
+		&:focus {
+			transition: all 0.3s;
+			background: #83AEAD;
+
+			svg {
+				transform: scale(1.2) rotateY(-45deg) translate(0px, 2px);
+				animation-name: social;
+				animation-duration: 1s;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+			}
+		}
 	}
 
 	&__phone {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		@include flex ($flex-direction: column);
 		padding-left: 2rem;
 
@@ -38,71 +122,16 @@
 			color: #2F2626;
 		}
 	}
-	
+}
 
-	&--open {
-		@include pos (absolute, 4rem, 0, $right: -1.1rem);
-		@include flex ($flex-direction: column);
-		@include wh (29.5rem, 59.6rem);
-		padding-top: 2rem;
-
-
-		.nav-menu {
-			@include flex ($flex-direction: column);
-			margin-bottom: 4rem;
-			gap: 2rem;
-			align-self: flex-start;
-			width: 100%;
-		}
-
-		.nav-menu li {
-			width: 100%;
-			transition: all 0.3s;
-
-			svg {
-				fill: #2F3B3F;
-				@include wh (1.5rem);
-				display: inline-block;
-				margin-right: 1rem;
-				transform: translate(0px, 2px);
-			}
-
-			a {
-				@include font (1.4rem, 1.9rem, 400, left);
-				font-family: "Nunito-Regular", sans-serif;
-				color: #211E1E;
-				padding: 1.5rem 0 1.5rem 2rem;
-
-				width: 100%;
-				display: block;
-
-				&:active {
-					border-right: 9px solid #c8f5ff;
-				}
-			}
-
-			&:hover,
-			&:focus {
-				transition: all 0.3s;
-				background: #83AEAD;
-
-				svg {
-					transform: scale(1.2) rotateY(-45deg) translate(0px, 2px);
-					animation-name: social;
-					animation-duration: 1s;
-					animation-timing-function: linear;
-					animation-iteration-count: infinite;
-				}
-			}
-		}
-
-	}
+.open {
+	display: block;
 }
 
 // social
 .menu-mobile {
-	.social{
+	.social {
 		margin-left: 4.5rem;
+		margin-right: 3.5rem;
 	}
 }
-

@@ -1,32 +1,42 @@
+.modal-burger
 .menu-mobile
     svg.menu-mobile__border(width="295" height="646" viewBox="0 0 295 646" fill="none" xmlns="http://www.w3.org/2000/svg")
         path(d="M294.5 81.4489V6C294.5 2.96243 292.038 0.5 289 0.5H258.361C255.324 0.5 252.861 2.96243 252.861 6V41.4711C252.861 43.9564 250.847 45.9711 248.361 45.9711H6C2.96244 45.9711 0.5 48.4336 0.5 51.4711V640C0.5 643.038 2.96243 645.5 6 645.5H289C292.038 645.5 294.5 643.038 294.5 640V81.4489Z" fill="white" stroke="#2F3B3F")
-    .menu-mobile__phone         
-        span Ежедневно c 8:30 до 20:00 
-        a(href="tel:84993501101") 8(499)350-11-01
-    ul.nav-menu 
-        li: a.active(href="")
-            svg(width="15" height="15")
-                use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#main")
-            | Главная
-        li: a(href="")
-            svg(width="15" height="15")
-                use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount")
-            |  Каталог
-        li: a(href="")
-            svg(width="15" height="15")
-                use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#about")
-            |  Акции
-        li: a(href="")
-            svg(width="15" height="15")
-                use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount")
-            |  Рассрочка
-        li: a(href="")
-            svg(width="15" height="15")
-                use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews")
-            |  Статьи
-        li: a(href="about.html")
-            svg(width="15" height="15")
-                use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#contact")
-            |  О наших окнах   
-    include ./../../bem-blocks/socials/socials.pug    
+        .menu-mobile__phone         
+            span Ежедневно c 8:30 до 20:00 
+            a(href="tel:84993501101") 8(499)350-11-01
+        ul.nav-menu 
+            li: a.active(href="")
+                svg(width="15" height="15")
+                    use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#main")
+                | Главная
+            li: a(href="")
+                svg(width="15" height="15")
+                    use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount")
+                |  Каталог
+            li: a(href="")
+                svg(width="15" height="15")
+                    use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount")
+                |  Акции
+            li: a(href="")
+                svg(width="15" height="15")
+                    use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount")
+                |  Рассрочка
+            li: a(href="")
+                svg(width="15" height="15")
+                    use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews")
+                |  Статьи
+            li: a(href="about.html")
+                svg(width="15" height="15")
+                    use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#contact")
+                |  О наших окнах
+            li: a(href="")
+                svg(width="15" height="15")
+                    use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews")
+                |  Онлайн-калькулятор
+            li: a(href="about.html")
+                svg(width="15" height="15")
+                    use(xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews")
+                |  Бесплатный замер
+
+        include ./../../bem-blocks/socials/socials.pug    

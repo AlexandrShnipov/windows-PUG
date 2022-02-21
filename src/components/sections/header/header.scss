@@ -53,6 +53,10 @@
             margin-right: 15rem;
         }
 
+        @include media(xlg){          
+            margin-right: 7rem;
+        }
+
         &::after {
             @include pseudo;
             @include background(url("../img/icons/search.svg"));
@@ -149,6 +153,7 @@
     cursor: pointer;
     transition: background 0.3s ease-out;
     position: relative;
+    z-index: 12;
 
     &:focus {
         outline: none;

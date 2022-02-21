@@ -1,5 +1,6 @@
 .menu-top {
 	display: none;
+
 	@include media (xlg) {
 		display: block;
 	}
@@ -7,6 +8,14 @@
 	ul {
 		@include flex (space-between, center);
 		gap: 5.9rem;
+
+		@include media(md) {
+			margin-left: 12rem;
+		}
+
+		@include media(md) {
+			margin-left: 21rem;
+		}
 	}
 
 	a {
