@@ -7,15 +7,16 @@
 
 	ul {
 		@include flex (space-between, center);
-		gap: 5.9rem;
+		gap: 5.9rem;		
 
 		@include media(md) {
-			margin-left: 12rem;
+			margin-left: 14rem;
+		}
+		@include media(xxl) {
+			margin-left: 22rem;
 		}
 
-		@include media(md) {
-			margin-left: 21rem;
-		}
+
 	}
 
 	a {

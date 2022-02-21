@@ -5,13 +5,12 @@
     padding-right: 0;
     z-index: 3;
     margin-bottom: 5rem;
-   
+
 
     // .header__flex
     &__flex {
         @include flex (space-between, center);
-        width: 100%;
-        // padding: 0 1.5rem;
+        width: 100%;        
     }
 
     // .header__logo
@@ -49,21 +48,14 @@
         margin-left: auto;
         margin-right: 4rem;
 
-        @include media(md){          
+        @include media(md) {
             margin-right: 15rem;
         }
 
-        @include media(xlg){          
+        @include media(xlg) {
             margin-right: 7rem;
         }
 
-        &::after {
-            @include pseudo;
-            @include background(url("../img/icons/search.svg"));
-            @include wh(1.5rem);
-            @include pos(absolute, $top: 0, $left: 0);
-
-        }
 
         input[type="text"] {
             color: #2f3b3f;
@@ -74,56 +66,44 @@
             width: 100%;
             outline: none;
             border: none;
-        }
-
-        button {
             display: none;
+
+
+            &.active {
+                display: block;
+                width: 24rem;
+                padding: 0.7rem 4.4rem 0.7rem 1.4rem;
+                border: 1px solid #2F3B3F;
+                border-radius: 5px;
+                position: absolute;
+                left: -20rem;
+                top: -1.5rem;
+            }
         }
 
-        &.active {
-            width: 24rem;
-            padding: 0.7rem 10px 0.7rem 3.4rem;
-            border: 1px solid #2F3B3F;
+        .button-search {
+            // display: none;
+            width: 3.5rem;
+            height: 2.5rem;
+            position: absolute;
+            top: -1.3rem;
+            border: none;
             border-radius: 5px;
-
-            @include media (lg) {
-                margin: 0 1rem;
-            }
+            background-color: transparent;
 
             &::after {
-                @include pos(absolute, $top: 7px, $left: 11px);
-
+                @include pseudo;
+                @include background(url("../img/icons/search.svg"));
+                @include wh(1.5rem);
+                @include pos(absolute, $top: .4rem, $left: .9rem);
             }
-
-            button {
-                display: block;
-                @include wh(3.5rem, 3rem);
-                border-radius: 5px;
-                background-color: #2f3b3f;
-                outline: none;
-                transition: all 0.3s;
-                @include pos (absolute, $top: 3px, $right: 3px);
-
-                &:hover,
-                &:focus {
-                    transition: all 0.3s;
-                    background: #fff;
-
-                    svg {
-                        fill: #2f3b3f;
-                    }
-                }
-
-                svg {
-                    fill: #fff;
-                    @include wh(1.5rem);
-                    transition: all 0.3s;
-
-
-                }
+            
+            &.active{
+                background-color:  #83AEAD;;
             }
         }
     }
+
 
 
     &__burger {
@@ -132,23 +112,15 @@
 }
 
 
+
 // Гамбургер
-// .cmn-toggle-switch.active {
-//     // padding: 0.7rem 1rem;
-//     border: 1px solid #2F3B3F;
-//     border-radius: 5px;
-//     border-bottom: none;
-//     border-bottom-left-radius: 0;
-//     border-bottom-right-radius: 0;
-//     background-color: #fff;
-// }
 
 .cmn-toggle-switch {
     @include wh(2.2rem, 2.2rem);
     display: block;
     margin: 0;
     padding: 0;
-    font-size: 0;  
+    font-size: 0;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease-out;
@@ -159,14 +131,14 @@
         outline: none;
     }
 
-    &::before{
+    &::before {
         position: absolute;
         content: ' ';
-        top:0;
+        top: 0;
         left: 0;
         bottom: 0;
         right: 0;
-        
+
     }
 
     span {
@@ -219,33 +191,4 @@
             }
         }
     }
-
-    // .cmn-toggle-switch__htx.active {
-    //     position: absolute;
-    //     z-index: 8000;
-    //     width: 4.7rem;
-    //     height: 4.7rem;
-
-    //     span {
-    //         background: none;
-    //         width: 3rem;
-    //         right: 0.5rem;
-
-    //         &::before,
-    //         &::after {
-
-    //             transition-delay: 0.3s;
-    //         }
-
-    //         &::before {
-    //             top: 0;
-    //             transform: rotate(45deg);
-    //         }
-
-    //         &::after {
-    //             bottom: 0;
-    //             transform: rotate(-45deg);
-    //         }
-    //     }
-    // }
 }

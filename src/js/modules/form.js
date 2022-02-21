@@ -1,24 +1,18 @@
 export default function form() {
-	if (document.getElementById('form')) {
-		const form = document.getElementById('form');
-		const input = document.querySelector('._req');
 
-		window.addEventListener('click', (e) => {
-			if (e.target.classList.contains('header__form') || e.target.classList.contains('_req')) {
-				form.classList.add('active');
-			} else {
-				form.classList.remove('active');
-				input.value = '';
-				input.blur();
-			}
-		});
+	const form = document.getElementById('form');
+	const input = document.querySelector('._req');
+	const button = document.querySelector('.button-search');
 
-		window.addEventListener('keydown', (e) => {
-			if (e.code === 'Escape' && form.classList.contains('active')) {
-				form.classList.remove('active');
-				input.value = '';
-				input.blur();
-			}
-		});
-	}
+	button.addEventListener('click', () => {
+		input.classList.add('active');
+		input.focus();		
+		button.classList.add('active');	
+	})
+
+	const closeForm = () => input.classList.remove("active");
+	const closeButton = () => button.classList.remove("active");
+
+	input.addEventListener("blur", closeForm);
+	input.addEventListener("blur", closeButton);
 }

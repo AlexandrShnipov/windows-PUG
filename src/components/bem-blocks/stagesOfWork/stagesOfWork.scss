@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: scale 1s infinite;
+    animation: scale 1.5s infinite linear;
 
     @include media (md) {
       width: 7.5rem;

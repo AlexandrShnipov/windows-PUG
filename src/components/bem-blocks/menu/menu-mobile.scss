@@ -84,9 +84,9 @@
 			background: #83AEAD;
 
 			svg {
-				transform: scale(1.2) rotateY(-45deg) translate(0px, 2px);
+				transform: translate(0px, 2px);
 				animation-name: social;
-				animation-duration: 1s;
+				animation-duration: 3s;
 				animation-timing-function: linear;
 				animation-iteration-count: infinite;
 			}
@@ -132,6 +132,6 @@
 .menu-mobile {
 	.social {
 		margin-left: 4.5rem;
-		margin-right: 3.5rem;
+		margin-right: 3.5rem;	
 	}
 }

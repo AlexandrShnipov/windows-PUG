@@ -1652,21 +1652,19 @@ button.swiper-pagination-bullet {
 /***********Анимация для svg **************/
 @keyframes svg {
   0% {
-    fill: #83AEAD;
-    transform: scale(1.01);
-  }
-  35% {
-    fill: #83AEAD;
-    transform: scale(1.5);
-  }
-  75% {
-    fill: #83AEAD;
-    transform: scale(1.01);
-  }
-  100% {
-    fill: #83AEAD;
-    transform: scale(1);
-  }
+		fill: #fff;
+		transform: scale(1);
+	}
+
+	50% {
+		fill: #fff;
+		transform: scale(1.2);
+	}
+
+	100% {
+		fill: #fff;
+		transform: scale(1);
+	}
 }
 .menu-top {
   display: none;

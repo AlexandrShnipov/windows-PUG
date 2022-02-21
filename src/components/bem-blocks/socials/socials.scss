@@ -23,12 +23,8 @@
 
 		&:hover,
 		&:focus {
-			svg {
-				transform: scale(1.2) rotateY(-45deg);
-				animation-name: social;
-				animation-duration: 1s;
-				animation-timing-function: linear;
-				animation-iteration-count: infinite;
+			svg {			
+				animation: social 3s infinite linear;
 			}
 		}
 	}

@@ -19,9 +19,5 @@
   stroke: #2F3B3F;
 }
 .social a:hover svg, .social a:focus svg {
-  transform: scale(1.2) rotateY(-45deg);
-  animation-name: social;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation: social 3s infinite linear;
 }
