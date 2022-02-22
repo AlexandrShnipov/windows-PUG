@@ -4,9 +4,12 @@ export default function toggleModal() {
   const close = document.querySelector(".modal__button--closed");
   const filter = document.querySelector(".filter__wrap")
 
+  console.log('filterButton', filterButton)
+
   const closeModal = () => modal.classList.remove("is-open");
 
   filterButton.addEventListener("click", () => {
+    console.log('filterButton', filterButton)
     modal.classList.add("is-open");
   });
   close.addEventListener("click", closeModal);

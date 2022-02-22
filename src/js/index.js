@@ -4,11 +4,16 @@ import reviews from './modules/reviews.js'; // отзывы слайдер
 import employees from './modules/employees.js'; // сотрудники слайдер
 import menuMobile from './modules/menu-mobile'; // гамбургер
 import form from './modules/form'; // форма поиска
-import toggleModal from './modules/button-filter'; // фильтр каталога
+//import toggleModal from './modules/button-filter'; // фильтр каталога
+import select from './modules/select'; // фильтр каталога
+import selectTwo from './modules/selectTwo'; // фильтр каталога
+
 
 accordion();
 reviews();
 employees();
 menuMobile();
 form();
-toggleModal();
+//toggleModal();
+select();
+selectTwo();
