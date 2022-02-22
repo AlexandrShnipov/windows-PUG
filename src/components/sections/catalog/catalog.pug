@@ -1,4 +1,25 @@
 section.catalog-home
+	.modal
+		.modal__content
+			.modal__content-buttons
+				button.button--size.active Ввести размер
+				button.button--call Вызвать замерщика
+				button.button--closed
+					img.button--closed-img(src="./wp-content/themes/factory_windows/assets/img/icons/filter-closed.png", alt="Закрыть", aria-label="Закрыть фильтр")
+			.modal__content--size.modal__content-items
+				form
+					input.modal__content-item(type='text' placeholder='Высота')
+					input.modal__content-item(type='text' placeholder='Ширина')
+					select.modal__content-item
+						option(selected) Профиль
+						option(value='60mm') 60мм 
+						option(value='80mm') 80мм
+					select.modal__content-item
+						option(selected) Цвет
+						option(value='white') Белый 
+						option(value='tree') Дерево
+					button.button-form(type='submit') Отправить 
+			.modal__content--call.modal__item
 	.container
 		h2 Каталог
 		.catalog-items__box

@@ -1,5 +1,32 @@
 
 <section class="catalog-home">
+  <div class="modal">
+    <div class="modal__content">
+      <div class="modal__content-buttons">
+        <button class="button--size active">Ввести размер</button>
+        <button class="button--call">Вызвать замерщика</button>
+        <button class="button--closed"><img class="button--closed-img" src="./wp-content/themes/factory_windows/assets/img/icons/filter-closed.png" alt="Закрыть" aria-label="Закрыть фильтр"/></button>
+      </div>
+      <div class="modal__content--size modal__content-items">
+        <form>
+          <input class="modal__content-item" type="text" placeholder="Высота"/>
+          <input class="modal__content-item" type="text" placeholder="Ширина"/>
+          <select class="modal__content-item">
+            <option selected="selected">Профиль</option>
+            <option value="60mm">60мм </option>
+            <option value="80mm">80мм</option>
+          </select>
+          <select class="modal__content-item">
+            <option selected="selected">Цвет</option>
+            <option value="white">Белый </option>
+            <option value="tree">Дерево</option>
+          </select>
+          <button class="button-form" type="submit">Отправить </button>
+        </form>
+      </div>
+      <div class="modal__content--call modal__item"></div>
+    </div>
+  </div>
   <div class="container">
     <h2>Каталог</h2>
     <div class="catalog-items__box">

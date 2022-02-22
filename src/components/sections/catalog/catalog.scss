@@ -1,21 +1,23 @@
 .catalog-home {
   margin-bottom: 6rem;
+  position: relative;
 
-  @include media(md){
+  @include media(md) {
     margin-bottom: 4.92rem;
   }
-  @include media(xxl){
+
+  @include media(xxl) {
     margin-bottom: 10rem;
   }
 
-  h2{
+  h2 {
     margin-bottom: 5.1rem;
 
-    @include media(md){
+    @include media(md) {
       margin-bottom: 3.6rem;
     }
 
-    @include media(xxl){
+    @include media(xxl) {
       margin-bottom: 7rem;
     }
   }
@@ -48,7 +50,7 @@
     margin-right: 2rem;
     max-width: 13.7rem;
 
-    @include media(md){
+    @include media(md) {
       font-size: 1.8rem;
       max-width: 16.7rem;
       margin-right: 4rem;
@@ -59,11 +61,165 @@
       width: 18%;
       height: 0.6rem;
 
-      @include media(md){
+      @include media(md) {
         right: -4rem;
         width: 4.4rem;
         height: 1.6rem;
       }
+    }
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &::before {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+    background: rgba(47, 59, 63, 0.5);
+  }
+
+  &__content {
+    background: #FFFFFF;
+    border: 1px solid #2F3B3F;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  &__content-items {
+    padding-left: 14rem;
+    padding-right: 14rem;
+    margin-bottom: 7.7rem;
+  }
+
+  &__content-buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5.5rem;
+    max-height: 5.5rem;
+
+    .button--size,
+    .button--call {
+      @include font(2.2rem, 1.36, 600);
+      border: none;
+      background-color: transparent;
+      color: #2F3B3F;
+      padding: 1.3rem 9.3rem 1.3rem 10.4rem;
+      transition: all .5s;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: #83AEAD;
+      }
+    }
+
+    .active {
+      color: #fff;
+      background-color: #83AEAD;
+    }
+  }
+
+  .button--closed {
+    border: none;
+    background-color: transparent;
+    max-height: 5.5rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    transition: all .5s;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #83AEAD;
+    }
+  }
+
+
+  form {
+    display: grid;
+    column-gap: 11.4rem;
+    row-gap: 2.8rem;
+    grid-template-columns: 1fr 1fr;
+
+    input,
+    select,
+    button {
+      @include font(1.8rem, 1.39);
+      transition: all .5s;
+      display: inline-block;
+    }
+
+    input,
+    select {
+      background-color: #F1F6F6;
+      color: rgba(0, 0, 0, 0.3);
+      padding: 1rem;
+      border: none;
+      max-width: 18rem;
+      width: 100%;
+      outline-color: #83AEAD;
+    }
+
+    button {
+      background-color: #2F3B3F;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      padding: 1rem 2rem;
+      width: fit-content;
+      height: fit-content;
+      color: #FFFFFF;
+      border: none;
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      justify-self: center;
+      margin-top: 4rem;
+
+      &:hover {
+        box-shadow: 10px 10px 20px #2f3b3f;
+        background-color: #fff;
+        color: #2F3B3F;
+      }
+    }
+
+    .modal__content-item:nth-child(1) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      justify-self: end;
+    }
+
+    .modal__content-item:nth-child(2) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      justify-self: start;
+    }
+
+    .modal__content-item:nth-child(3) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      justify-self: end;
+    }
+
+    .modal__content-item:nth-child(4) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      justify-self: start;
     }
   }
 }
