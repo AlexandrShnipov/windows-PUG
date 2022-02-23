@@ -1,6 +1,11 @@
 "use strict";
 
-(function select() {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = select;
+
+function select() {
   var selectSingle = document.querySelector('.select');
   var selectSingle_title = selectSingle.querySelector('.select__title');
   var selectSingle_labels = selectSingle.querySelectorAll('.select__label'); // Toggle menu
@@ -19,4 +24,4 @@
       selectSingle.setAttribute('data-state', '');
     });
   }
-})();
+}

@@ -1,6 +1,11 @@
 "use strict";
 
-(function selectTwo() {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = selectTwo;
+
+function selectTwo() {
   var selectSingleTwo = document.querySelector('.selectTwo');
   var selectSingle_titleTwo = selectSingleTwo.querySelector('.select__titleTwo');
   var selectSingle_labelsTwo = selectSingleTwo.querySelectorAll('.select__labelTwo'); // Toggle menu
@@ -19,4 +24,4 @@
       selectSingleTwo.setAttribute('data-state', '');
     });
   }
-})();
+}

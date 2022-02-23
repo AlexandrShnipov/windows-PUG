@@ -1,4 +1,4 @@
-(function selectTwo() {
+export default function selectTwo() {
 
 const selectSingleTwo = document.querySelector('.selectTwo');
 const selectSingle_titleTwo = selectSingleTwo.querySelector('.select__titleTwo');
@@ -20,4 +20,4 @@ for (let i = 0; i < selectSingle_labelsTwo.length; i++) {
     selectSingleTwo.setAttribute('data-state', '');
   });
 }
-})()
+}

@@ -2,8 +2,6 @@
 
 require("./libs/swiper-bundle.min.js");
 
-var _accordion = _interopRequireDefault(require("./modules/accordion.js"));
-
 var _reviews = _interopRequireDefault(require("./modules/reviews.js"));
 
 var _employees = _interopRequireDefault(require("./modules/employees.js"));
@@ -14,22 +12,30 @@ var _form = _interopRequireDefault(require("./modules/form"));
 
 var _buttonFilter = _interopRequireDefault(require("./modules/button-filter"));
 
+var _modalHomeCatalog = _interopRequireDefault(require("./modules/modal-home-catalog"));
+
+var _select = _interopRequireDefault(require("./modules/select"));
+
+var _selectTwo = _interopRequireDefault(require("./modules/selectTwo"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 // Swiper-slider
-// Аккордион
+//import accordion from './modules/accordion.js'; // Аккордион
 // отзывы слайдер
 // сотрудники слайдер
 // гамбургер
 // форма поиска
-//import select from './modules/select'; // фильтр каталога
-//import selectTwo from './modules/selectTwo'; // фильтр каталога
+// фильтр страницы каталога
+// модальное окно главной страницы
 // фильтр каталога
-(0, _accordion["default"])();
+// фильтр каталога
+//accordion();
 (0, _reviews["default"])();
 (0, _employees["default"])();
 (0, _menuMobile["default"])();
-(0, _form["default"])(); //select();
-//selectTwo();
-
+(0, _form["default"])();
 (0, _buttonFilter["default"])();
+(0, _modalHomeCatalog["default"])();
+(0, _select["default"])();
+(0, _selectTwo["default"])();

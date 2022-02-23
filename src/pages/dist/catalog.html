@@ -43,68 +43,119 @@
               </ul>
             </nav>
             <form class="header__form" id="form">
-              <input class="_req" type="text" value="" placeholder="">
-              <button id="formBtn" type="button">
-                <svg width="15" height="15">
-                  <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#enter"></use>
-                </svg>
-              </button>
+              <input class="_req" type="text" value="" placeholder="" autofocus="autofocus">
+              <button class="button-search" id="formBtn" type="button">               </button>
             </form>
             <div class="header__burger">
               <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span class="toggle menu"></span></button>
+              <div class="modal-burger"></div>
               <div class="menu-mobile">
-                <div class="menu-mobile__phone">        <span>Ежедневно c 8:30 до 20:00 </span><a href="tel:84993501101">8(499)350-11-01</a></div>
-                <ul class="nav-menu"> 
-                  <li><a class="active" href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#main"></use>
-                      </svg>Главная</a></li>
-                  <li><a href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
-                      </svg> Каталог</a></li>
-                  <li><a href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#about"></use>
-                      </svg> Акции</a></li>
-                  <li><a href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
-                      </svg> Рассрочка</a></li>
-                  <li><a href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
-                      </svg> Статьи</a></li>
-                  <li><a href="about.html">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#contact"></use>
-                      </svg> О наших окнах   </a></li>
-                </ul>
-                <ul class="social">
-                  <li><a href="">
-                      <svg width="35" height="35">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-vk"></use>
-                      </svg></a></li>
-                  <li><a href="">
-                      <svg width="35" height="35">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-od"> </use>
-                      </svg></a></li>
-                  <li><a href="">
-                      <svg width="35" height="35">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-instagram"></use>
-                      </svg></a></li>
-                </ul>
+                <svg class="menu-mobile__border" width="295" height="646" viewBox="0 0 295 646" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M294.5 81.4489V6C294.5 2.96243 292.038 0.5 289 0.5H258.361C255.324 0.5 252.861 2.96243 252.861 6V41.4711C252.861 43.9564 250.847 45.9711 248.361 45.9711H6C2.96244 45.9711 0.5 48.4336 0.5 51.4711V640C0.5 643.038 2.96243 645.5 6 645.5H289C292.038 645.5 294.5 643.038 294.5 640V81.4489Z" fill="white" stroke="#2F3B3F"></path>
+                  <div class="menu-mobile__phone">        <span>Ежедневно c 8:30 до 20:00 </span><a href="tel:84993501101">8(499)350-11-01</a></div>
+                  <ul class="nav-menu"> 
+                    <li><a class="active" href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#main"></use>
+                        </svg>Главная</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
+                        </svg> Каталог</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
+                        </svg> Акции</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
+                        </svg> Рассрочка</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
+                        </svg> Статьи</a></li>
+                    <li><a href="about.html">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#contact"></use>
+                        </svg> О наших окнах</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
+                        </svg> Онлайн-калькулятор</a></li>
+                    <li><a href="about.html">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
+                        </svg> Бесплатный замер</a></li>
+                  </ul>
+                  <ul class="social">
+                    <li><a href="">
+                        <svg width="35" height="35">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-vk"></use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg width="35" height="36">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-od"> </use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg width="35" height="35">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-instagram"></use>
+                        </svg></a></li>
+                  </ul>
+                </svg>
               </div>
             </div>
           </div>
         </div>
       </header>
+      <div class="modal-home__wrap">
+        <div class="modal-home">
+          <div class="modal-home__content">
+            <div class="modal-home__content-buttons">
+              <button class="button--size focus">Ввести размер</button>
+              <button class="button--call">Вызвать замерщика</button>
+              <button class="button--closed button--closed-js"><img class="button--closed-img" src="./wp-content/themes/factory_windows/assets/img/icons/filter-closed.png" alt="Закрыть" aria-label="Закрыть фильтр"></button>
+            </div>
+            <div class="modal-home__content--size modal-home__content-items">
+              <form>
+                <input class="modal-home__content-item" type="text" placeholder="Высота">
+                <input class="modal-home__content-item" type="text" placeholder="Ширина">
+                <div class="select modal-home__content-item" data-state="">
+                  <div class="select__title" data-default="Option 0">Профиль
+                    <div class="select__content">
+                      <input class="select__input" id="singleSelect0" type="radio" name="singleSelect" checked>
+                      <label class="select__label" for="singleSelect0">Option 0</label>
+                      <input class="select__input" id="singleSelect3" type="radio" name="singleSelect">
+                      <label class="select__label" for="singleSelect3">60мм</label>
+                      <input class="select__input" id="singleSelect4" type="radio" name="singleSelect">
+                      <label class="select__label" for="singleSelect4">80мм</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="selectTwo modal-home__content-item" data-state="">
+                  <div class="select__titleTwo" data-default="Option 0">Цвет
+                    <div class="select__contentTwo">
+                      <input class="select__inputTwo" id="singleSelect0" type="radio" name="singleSelect" checked>
+                      <label class="select__labelTwo" for="singleSelect0">Option 0</label>
+                      <input class="select__inputTwo" id="singleSelect1" type="radio" name="singleSelect">
+                      <label class="select__labelTwo" for="singleSelect1">Белый</label>
+                      <input class="select__inputTwo" id="singleSelect2" type="radio" name="singleSelect">
+                      <label class="select__labelTwo" for="singleSelect2">Дерево</label>
+                    </div>
+                  </div>
+                </div>
+                <button class="button-form" type="submit">Отправить </button>
+              </form>
+            </div>
+            <div class="modal-home__content--call modal__item"></div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <h2 class="catalog__title">Каталог</h2>
         <div class="button-box">
           <button class="button-modal--open">Фильтр</button>
         </div>
-        <div class="modal">
+        <div class="modal-filter">
           <div class="filter__wrap">
             <button class="modal__button--closed"><img class="modal__button--closed-img" src="./wp-content/themes/factory_windows/assets/img/icons/filter-closed.png" alt="Закрыть" aria-label="Закрыть фильтр"></button>
             <form class="filter__form">   
@@ -197,7 +248,7 @@
               </div>
               <div class="card__price card__price--sale">
                 <h3>2 960 ₽ <span class="old-price">4 430 ₽</span></h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -213,7 +264,7 @@
               </div>
               <div class="card__price">
                 <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -229,7 +280,7 @@
               </div>
               <div class="card__price">
                 <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -245,7 +296,7 @@
               </div>
               <div class="card__price">
                 <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -261,7 +312,7 @@
               </div>
               <div class="card__price">
                 <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -277,7 +328,7 @@
               </div>
               <div class="card__price">
                 <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -293,7 +344,7 @@
               </div>
               <div class="card__price">
                 <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -309,7 +360,7 @@
               </div>
               <div class="card__price">
                 <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -325,7 +376,7 @@
               </div>
               <div class="card__price">
                 <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                <button class="btn-modal">Заказать</button>
+                <button class="btn-modal btn-modal-js">Заказать</button>
               </div>
             </div>
           </div>
@@ -412,7 +463,7 @@
                           <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-vk"></use>
                         </svg></a></li>
                     <li><a href="">
-                        <svg width="35" height="35">
+                        <svg width="35" height="36">
                           <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-od"> </use>
                         </svg></a></li>
                     <li><a href="">

@@ -36,6 +36,7 @@
 @import "./../components/bem-blocks/svg-txt/svg-txt"; // 2 секция главная
 @import "./../components/bem-blocks/menu/menu-top"; // меню в шапке
 @import "./../components/bem-blocks/menu/menu-mobile"; // меню мобильное
+@import "./../components/bem-blocks/modalHome/modalHome"; // модальное окно главной страницы
 @import "./../components/bem-blocks/socials/socials"; // социальные кнопки
 @import "./../components/bem-blocks/catalog-item/catalog-item"; // единица каталога
 @import "./../components/bem-blocks/filter/filter";
@@ -50,7 +51,7 @@
 @import "./../components/sections/discounts/discounts";
 @import "./../components/sections/about/about";
 @import "./../components/sections/principles/principles";
-@import "./../components/sections/catalog/catalog";
+@import "./../components/sections/catalog/catalogHome";
 @import "./../components/sections/measuring/measuring";
 @import "./../components/sections/reviews/reviews";
 @import "./../components/sections/feedback/feedback";

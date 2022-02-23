@@ -1,4 +1,4 @@
-(function select() {
+export default function select() {
   const selectSingle = document.querySelector('.select');
   const selectSingle_title = selectSingle.querySelector('.select__title');
   const selectSingle_labels = selectSingle.querySelectorAll('.select__label');
@@ -19,5 +19,6 @@
       selectSingle.setAttribute('data-state', '');
     });
   }
-})()
+}
+
 

@@ -28,7 +28,7 @@
   </head>
   <body>
     <div class="wrap-feedback"></div>
-    <div class="wrapper">
+    <div class="wrapper">   
       <header class="header">
         <div class="container">
           <div class="header__flex"><a class="header__logo" href="/">
@@ -43,57 +43,65 @@
               </ul>
             </nav>
             <form class="header__form" id="form">
-              <input class="_req" type="text" value="" placeholder="">
-              <button id="formBtn" type="button">
-                <svg width="15" height="15">
-                  <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#enter"></use>
-                </svg>
-              </button>
+              <input class="_req" type="text" value="" placeholder="" autofocus="autofocus">
+              <button class="button-search" id="formBtn" type="button">               </button>
             </form>
             <div class="header__burger">
               <button class="cmn-toggle-switch cmn-toggle-switch__htx" id="menu__button"><span class="toggle menu"></span></button>
+              <div class="modal-burger"></div>
               <div class="menu-mobile">
-                <div class="menu-mobile__phone">        <span>Ежедневно c 8:30 до 20:00 </span><a href="tel:84993501101">8(499)350-11-01</a></div>
-                <ul class="nav-menu"> 
-                  <li><a class="active" href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#main"></use>
-                      </svg>Главная</a></li>
-                  <li><a href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
-                      </svg> Каталог</a></li>
-                  <li><a href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#about"></use>
-                      </svg> Акции</a></li>
-                  <li><a href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
-                      </svg> Рассрочка</a></li>
-                  <li><a href="">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
-                      </svg> Статьи</a></li>
-                  <li><a href="about.html">
-                      <svg width="15" height="15">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#contact"></use>
-                      </svg> О наших окнах   </a></li>
-                </ul>
-                <ul class="social">
-                  <li><a href="">
-                      <svg width="35" height="35">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-vk"></use>
-                      </svg></a></li>
-                  <li><a href="">
-                      <svg width="35" height="35">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-od"> </use>
-                      </svg></a></li>
-                  <li><a href="">
-                      <svg width="35" height="35">
-                        <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-instagram"></use>
-                      </svg></a></li>
-                </ul>
+                <svg class="menu-mobile__border" width="295" height="646" viewBox="0 0 295 646" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M294.5 81.4489V6C294.5 2.96243 292.038 0.5 289 0.5H258.361C255.324 0.5 252.861 2.96243 252.861 6V41.4711C252.861 43.9564 250.847 45.9711 248.361 45.9711H6C2.96244 45.9711 0.5 48.4336 0.5 51.4711V640C0.5 643.038 2.96243 645.5 6 645.5H289C292.038 645.5 294.5 643.038 294.5 640V81.4489Z" fill="white" stroke="#2F3B3F"></path>
+                  <div class="menu-mobile__phone">        <span>Ежедневно c 8:30 до 20:00 </span><a href="tel:84993501101">8(499)350-11-01</a></div>
+                  <ul class="nav-menu"> 
+                    <li><a class="active" href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#main"></use>
+                        </svg>Главная</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
+                        </svg> Каталог</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
+                        </svg> Акции</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#discount"></use>
+                        </svg> Рассрочка</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
+                        </svg> Статьи</a></li>
+                    <li><a href="about.html">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#contact"></use>
+                        </svg> О наших окнах</a></li>
+                    <li><a href="">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
+                        </svg> Онлайн-калькулятор</a></li>
+                    <li><a href="about.html">
+                        <svg width="15" height="15">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#reviews"></use>
+                        </svg> Бесплатный замер</a></li>
+                  </ul>
+                  <ul class="social">
+                    <li><a href="">
+                        <svg width="35" height="35">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-vk"></use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg width="35" height="36">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-od"> </use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg width="35" height="35">
+                          <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-instagram"></use>
+                        </svg></a></li>
+                  </ul>
+                </svg>
               </div>
             </div>
           </div>
@@ -153,16 +161,14 @@
           </div>
         </div>
       </section>
-      <section class="discounts cf">
-        <div class="container">
-          <div class="discounts__wrapper">
-            <div class="discounts__box-img"><img src="./wp-content/themes/factory_windows/assets/img/discounts.jpg" alt="окна"></div>
-            <div class="discounts__filling"> 
-              <h2>Рекордная скидка 65%</h2>
-              <h3>Окна NOBEL от 2900 ₽/м2!</h3>
-              <p>до 30.09.21</p>
-              <button class="btn-modal">ОСТАВИТЬ ЗАЯВКУ</button>
-            </div>
+      <section class="discounts cf">   
+        <div class="discounts__wrapper">
+          <div class="discounts__box-img"><img src="./wp-content/themes/factory_windows/assets/img/discounts.jpg" alt="окна"></div>
+          <div class="discounts__content">           
+            <h2>Рекордная скидка 65%</h2>
+            <h3>Окна NOBEL от 2900 ₽/м2! </h3>
+            <p>до 30.09.21</p>
+            <button class="btn-modal">оставить заявку</button>
           </div>
         </div>
       </section>
@@ -262,55 +268,56 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog-home">
+        <!--include ../../bem-blocks/modalHome/modalHome-->
         <div class="container">
           <h2>Каталог</h2>
-          <div class="catalog__box">
-            <div class="catalog__card">
-              <div class="catalog__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
-              <div class="catalog__content">
+          <div class="catalog-items__box">
+            <div class="card">
+              <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+              <div class="card__content">
                 <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
-                <div class="catalog__options">
-                  <div class="catalog__parametr"><span>Высота</span><strong>500мм</strong></div>
-                  <div class="catalog__parametr"><span>Профиль</span><strong>60мм</strong></div>
-                  <div class="catalog__parametr"><span>Ширина</span><strong>700мм						</strong></div>
-                  <div class="catalog__parametr"><span>Цвет</span><strong>белый</strong></div>
+                <div class="card__options">
+                  <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                  <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                  <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                  <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
                 </div>
-                <div class="catalog__price">
-                  <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                  <button class="btn-modal">Заказать</button>
+                <div class="card__price card__price--sale">
+                  <h3>2 960 ₽ <span class="old-price">4 430 ₽</span></h3><span>В наличие 6шт</span>
+                  <button class="btn-modal btn-modal-js">Заказать</button>
                 </div>
               </div>
             </div>
-            <div class="catalog__card">
-              <div class="catalog__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
-              <div class="catalog__content">
+            <div class="card">
+              <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+              <div class="card__content">
                 <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
-                <div class="catalog__options">
-                  <div class="catalog__parametr"><span>Высота</span><strong>500мм</strong></div>
-                  <div class="catalog__parametr"><span>Профиль</span><strong>60мм</strong></div>
-                  <div class="catalog__parametr"><span>Ширина</span><strong>700мм						</strong></div>
-                  <div class="catalog__parametr"><span>Цвет</span><strong>белый</strong></div>
+                <div class="card__options">
+                  <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                  <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                  <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                  <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
                 </div>
-                <div class="catalog__price">
+                <div class="card__price">
                   <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                  <button class="btn-modal">Заказать</button>
+                  <button class="btn-modal btn-modal-js">Заказать</button>
                 </div>
               </div>
             </div>
-            <div class="catalog__card">
-              <div class="catalog__card-box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
-              <div class="catalog__content">
+            <div class="card">
+              <div class="card__box-img"><img src="./wp-content/themes/factory_windows/assets/img/window-card.png" alt="Одностворчатое поворотное окно NOBEL Start"></div>
+              <div class="card__content">
                 <h3>Одностворчатое поворотное окно NOBEL Start</h3><span>однокамерный стеклопакет</span>
-                <div class="catalog__options">
-                  <div class="catalog__parametr"><span>Высота</span><strong>500мм</strong></div>
-                  <div class="catalog__parametr"><span>Профиль</span><strong>60мм</strong></div>
-                  <div class="catalog__parametr"><span>Ширина</span><strong>700мм						</strong></div>
-                  <div class="catalog__parametr"><span>Цвет</span><strong>белый</strong></div>
+                <div class="card__options">
+                  <div class="card__parametr"><span>Высота</span><strong>500мм</strong></div>
+                  <div class="card__parametr"><span>Профиль</span><strong>60мм</strong></div>
+                  <div class="card__parametr"><span>Ширина</span><strong>700мм						</strong></div>
+                  <div class="card__parametr"><span>Цвет</span><strong>белый</strong></div>
                 </div>
-                <div class="catalog__price">
+                <div class="card__price">
                   <h3>4 430 ₽</h3><span>В наличие 6шт</span>
-                  <button class="btn-modal">Заказать</button>
+                  <button class="btn-modal btn-modal-js">Заказать</button>
                 </div>
               </div>
             </div>
@@ -453,7 +460,7 @@
                         <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-vk"></use>
                       </svg></a></li>
                   <li><a href="">
-                      <svg width="35" height="35">
+                      <svg width="35" height="36">
                         <use xlink:href="./wp-content/themes/factory_windows/assets/img/icons/sprite.svg#m-od"> </use>
                       </svg></a></li>
                   <li><a href="">
