@@ -8,6 +8,7 @@ import toggleModal from './modules/button-filter'; // фильтр страни�
 import modalHomeCatalog from './modules/modal-home-catalog'; // модальное окно главной страницы
 import select from './modules/select'; // фильтр каталога
 import selectTwo from './modules/selectTwo'; // фильтр каталога
+import selectThree from './modules/selectThree'; // фильтр каталога
 
 //accordion();
 reviews();
@@ -18,4 +19,5 @@ toggleModal();
 modalHomeCatalog();
 select();
 selectTwo();
+selectThree();
 

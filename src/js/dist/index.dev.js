@@ -18,6 +18,8 @@ var _select = _interopRequireDefault(require("./modules/select"));
 
 var _selectTwo = _interopRequireDefault(require("./modules/selectTwo"));
 
+var _selectThree = _interopRequireDefault(require("./modules/selectThree"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 // Swiper-slider
@@ -30,6 +32,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 // модальное окно главной страницы
 // фильтр каталога
 // фильтр каталога
+// фильтр каталога
 //accordion();
 (0, _reviews["default"])();
 (0, _employees["default"])();
@@ -39,3 +42,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 (0, _modalHomeCatalog["default"])();
 (0, _select["default"])();
 (0, _selectTwo["default"])();
+(0, _selectThree["default"])();

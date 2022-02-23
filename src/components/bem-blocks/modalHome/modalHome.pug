@@ -6,27 +6,46 @@
         button.button--call Вызвать замерщика
         button.button--closed.button--closed-js
           img.button--closed-img(src="./wp-content/themes/factory_windows/assets/img/icons/filter-closed.png", alt="Закрыть", aria-label="Закрыть фильтр")
-      .modal-home__content--size.modal-home__content-items
+      .modal-home__content--size.modal-home__content-items.active-modal
         form
           input.modal-home__content-item(type='text' placeholder='Высота')
           input.modal-home__content-item(type='text' placeholder='Ширина')
+          
           .select.modal-home__content-item(data-state="")
             .select__title(data-default="Option 0") Профиль
-              .select__content
-                input(id="singleSelect0" class="select__input" type="radio" name="singleSelect" checked)
-                label(for="singleSelect0" class="select__label") Option 0
-                input(id="singleSelect3" class="select__input" type="radio" name="singleSelect")
-                label(for="singleSelect3" class="select__label") 60мм
-                input(id="singleSelect4" class="select__input" type="radio" name="singleSelect")
-                label(for="singleSelect4" class="select__label") 80мм
+            .select__content
+              input(id="singleSelect0" class="select__input" type="radio" name="singleSelect" checked)
+              label(for="singleSelect0" class="select__label") Option 0
+              input(id="singleSelect1" class="select__input" type="radio" name="singleSelect")
+              label(for="singleSelect1" class="select__label") 60мм
+              input(id="singleSelect2" class="select__input" type="radio" name="singleSelect")
+              label(for="singleSelect2" class="select__label") 80мм
           .selectTwo.modal-home__content-item(data-state="")
             .select__titleTwo(data-default="Option 0") Цвет
-              .select__contentTwo
-                input(id="singleSelect0" class="select__inputTwo" type="radio" name="singleSelect" checked)
-                label(for="singleSelect0" class="select__labelTwo") Option 0
-                input(id="singleSelect1" class="select__inputTwo" type="radio" name="singleSelect")
-                label(for="singleSelect1" class="select__labelTwo") Белый
-                input(id="singleSelect2" class="select__inputTwo" type="radio" name="singleSelect")
-                label(for="singleSelect2" class="select__labelTwo") Дерево
+            .select__contentTwo
+              input(id="singleSelect0" class="select__inputTwo" type="radio" name="singleSelect" checked)
+              label(for="singleSelect0" class="select__labelTwo") Option 0
+              input(id="singleSelect3" class="select__inputTwo" type="radio" name="singleSelect")
+              label(for="singleSelect3" class="select__labelTwo") Белый
+              input(id="singleSelect4" class="select__inputTwo" type="radio" name="singleSelect")
+              label(for="singleSelect4" class="select__labelTwo") Дерево
           button.button-form(type='submit') Отправить 
-      .modal-home__content--call.modal__item
+      .modal-home__content--call.modal-home__content-items
+        form
+          
+          input.modal-home__content-item(type='name' placeholder='Имя')
+          input.modal-home__content-item(type='fone' placeholder='Телефон')
+          input.modal-home__content-item(type='address' placeholder='Адрес')
+          .selectThree.modal-home__content-item(data-state="")
+            .select__titleThree(data-default="Option 0") Тип 
+            .select__contentThree
+              input(id="singleSelect0" class="select__inputThree" type="radio" name="singleSelect" checked)
+              label(for="singleSelect0" class="select__labelThree") Option 0
+              input(id="singleSelect5" class="select__inputThree" type="radio" name="singleSelect")
+              label(for="singleSelect5" class="select__labelThree") Окно
+              input(id="singleSelect6" class="select__inputThree" type="radio" name="singleSelect")
+              label(for="singleSelect6" class="select__labelThree") Дверь          
+              input(id="singleSelect7" class="select__inputThree" type="radio" name="singleSelect")
+              label(for="singleSelect7" class="select__labelThree") Балкон
+                       
+          button.button-form(type='submit') Отправить

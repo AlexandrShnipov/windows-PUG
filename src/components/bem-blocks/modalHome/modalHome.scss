@@ -1,9 +1,9 @@
-.modal-home__wrap{
+.modal-home__wrap {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;  
+  right: 0;
   display: none;
   z-index: 5;
 }
@@ -18,7 +18,7 @@
   place-content: center;
   overflow: hidden;
   padding-left: 1rem;
-  padding-right: 1rem; 
+  padding-right: 1rem;
 
   &::before {
     position: absolute;
@@ -26,7 +26,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;     
+    right: 0;
     background-color: #fff;
     background: rgba(47, 59, 63, 0.5);
     z-index: 1;
@@ -45,14 +45,14 @@
     padding-right: 1rem;
     margin-bottom: 7.7rem;
 
-    @include media(md){
+    @include media(md) {
       padding-left: 14rem;
       padding-right: 14rem;
     }
   }
 
   &__content-buttons {
-    display: flex;    
+    display: flex;
     margin-bottom: 5.5rem;
     max-height: 5.5rem;
 
@@ -66,22 +66,21 @@
       align-items: center;
       justify-content: center;
       width: 47%;
-      transition: all .5s;      
+      transition: all .5s;
 
-      @include media(md){
+      @include media(md) {
         font-size: 2.2rem;
       }
 
-      &:hover,
-      &:focus {
+      &:hover {
         color: #fff;
         background-color: #83AEAD;
       }
-    }
 
-    .focus {
-      color: #fff;
-      background-color: #83AEAD;
+      &.focus {
+        color: #fff;
+        background-color: #83AEAD;
+      }
     }
   }
 
@@ -94,7 +93,7 @@
     transition: all .5s;
     flex-grow: 1;
 
-    img{
+    img {
       width: auto;
       height: auto;
     }
@@ -113,7 +112,7 @@
     row-gap: 2.8rem;
     grid-template-columns: 1fr 1fr;
 
-    @include media(md){
+    @include media(md) {
       column-gap: 11.4rem;
     }
 
@@ -186,12 +185,15 @@
 //! select
 
 .select,
-.selectTwo {
-  position: relative;  
+.selectTwo,
+.selectThree{
+  position: relative;
 
   &[data-state="active"] {
+
     .select__title,
-    .select__titleTwo {
+    .select__titleTwo,
+    .select__titleThree {
       &::before {
         transform: translate(-3px, -50%) rotate(-45deg);
       }
@@ -200,25 +202,29 @@
         transform: translate(3px, -50%) rotate(45deg);
       }
     }
-    
+
     .select__content,
-    .select__contentTwo {
+    .select__contentTwo,
+    .select__contentThree {
       opacity: 1;
     }
-    
-    .select__label + .select__input + .select__label,
-    .select__labelTwo + .select__inputTwo + .select__labelTwo {
+
+    .select__label+.select__input+.select__label,
+    .select__labelTwo+.select__inputTwo+.select__labelTwo,
+    .select__labelThree+.select__inputThree+.select__labelThree {
       max-height: 40px;
       border-top-width: 1px;
     }
   }
 }
+
 .select__title,
-.select__titleTwo {
+.select__titleTwo,
+.select__titleThree {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   cursor: pointer;
 
   &::before,
@@ -241,6 +247,7 @@
 
   &:hover {
     border-color: #83AEAD;
+
     &::before,
     &::after {
       background-color: #83AEAD;
@@ -249,7 +256,8 @@
 }
 
 .select__content,
-.select__contentTwo  {
+.select__contentTwo,
+.select__contentThree {
   position: absolute;
   top: 40px;
   left: 0;
@@ -260,24 +268,29 @@
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-    transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   opacity: 0;
   z-index: 8;
 }
+
 .select__input,
-.select__inputTwo {
+.select__inputTwo,
+.select__inputThree {
   display: none;
 
-  &:checked + label {
+  &:checked+label {
     background-color: #dedede;
   }
-  &:disabled + label {
+
+  &:disabled+label {
     opacity: 0.6;
     pointer-events: none;
   }
 }
+
 .select__label,
-.select__labelTwo {
+.select__labelTwo,
+.select__labelThree {
   display: flex;
   align-items: center;
   width: 100%;
@@ -287,24 +300,29 @@
   color: #2F3B3F;
   background-color: #F1F6F6;
   transition: all 0.2s ease-out;
-
   cursor: pointer;
-  
   overflow: hidden;
 
-  & + input + & {
+  &+input+& {
     border-top: 0 solid #C7CCD160;
   }
 
   &:hover {
     background-color: #83AEAD !important;
-
     color: #ffffff;
   }
 }
 
-.active-modal{
-  display: block;
+
+.modal-home__content--size{
+  display: none;
 }
 
+.modal-home__content--call{
+  display: none;
+}
+
+.active-modal {
+  display: block;
+}
 
