@@ -1,0 +1,84 @@
+
+<div class="button-box">
+  <button class="button-modal--open">Фильтр</button>
+</div>
+<div class="modal-filter">
+  <div class="filter__wrap">
+    <button class="modal__button--closed"><img class="modal__button--closed-img" src="./wp-content/themes/factory_windows/assets/img/icons/filter-closed.png" alt="Закрыть" aria-label="Закрыть фильтр"/></button>
+    <form class="filter__form">   
+      <div class="filter__form-item">
+        <div class="filter__form-item-wrap">
+          <input type="checkbox" value="Sale" name="Sale" id="Sale"/><span class="checkbox__span"></span>
+          <label for="Sale">Скидки</label>
+        </div>
+      </div>
+      <div class="filter__form-item">
+        <h5 class="filter__form-item-title">Тип товара</h5>
+        <ul> 
+          <li>     
+            <input type="checkbox" value="Windows" name="Product1" id="Windous"/><span class="checkbox__span"> </span>
+            <label for="Windous">Окна</label>
+          </li>
+          <li>     
+            <input type="checkbox" value="Dоors" name="Product2" id="Dоors"/><span class="checkbox__span"> </span>
+            <label for="Dоors">Двери</label>
+          </li>
+          <li>     
+            <input type="checkbox" value="Balconies" name="Product3" id="Balconies"/><span class="checkbox__span"> </span>
+            <label for="Balconies">Балконы</label>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__form-item">
+        <h5 class="filter__form-item-title">Высота</h5>
+        <ul>
+          <li><span>от</span>
+            <input type="text" name="height-from"/>
+          </li>
+          <li><span>до</span>
+            <input type="text" name="height-before"/>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__form-item">
+        <h5 class="filter__form-item-title">Ширина</h5>
+        <ul>
+          <li><span>от</span>
+            <input type="text" name="width-from"/>
+          </li>
+          <li><span>до</span>
+            <input type="text" name="width-before"/>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__form-item">
+        <h5 class="filter__form-item-title">Цвет </h5>
+        <ul> 
+          <li>     
+            <input type="checkbox" value="White" name="Color1" id="White"/><span class="checkbox__span"> </span>
+            <label for="White">Белый</label>
+          </li>
+          <li>     
+            <input type="checkbox" value="Wood" name="Color2" id="Wood"/><span class="checkbox__span"> </span>
+            <label for="Wood">Дерево</label>
+          </li>
+        </ul>
+      </div>
+      <div class="filter__form-item">
+        <h5 class="filter__form-item-title">Цена</h5>
+        <ul>
+          <li><span>от</span>
+            <input type="text" name="price-from"/>
+          </li>
+          <li><span>до</span>
+            <input type="text" name="price-before"/>
+          </li>
+        </ul>
+      </div>
+      <div class="form__buttons-wrap">
+        <button class="filter__button-submit" type="submit">Применить</button>
+        <button class="filter__button-reset" type="reset">Сбросить фильтры      </button>
+      </div>
+    </form>
+  </div>
+</div>

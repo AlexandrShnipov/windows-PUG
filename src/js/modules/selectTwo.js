@@ -1,8 +1,8 @@
 (function selectTwo() {
 
-const selectSingleTwo = document.querySelector('.__selectTwo');
-const selectSingle_titleTwo = selectSingleTwo.querySelector('.__select__titleTwo');
-const selectSingle_labelsTwo = selectSingleTwo.querySelectorAll('.__select__labelTwo');
+const selectSingleTwo = document.querySelector('.selectTwo');
+const selectSingle_titleTwo = selectSingleTwo.querySelector('.select__titleTwo');
+const selectSingle_labelsTwo = selectSingleTwo.querySelectorAll('.select__labelTwo');
 
 // Toggle menu
 selectSingle_titleTwo.addEventListener('click', () => {

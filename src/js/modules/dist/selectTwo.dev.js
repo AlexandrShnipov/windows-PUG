@@ -1,9 +1,9 @@
 "use strict";
 
 (function selectTwo() {
-  var selectSingleTwo = document.querySelector('.__selectTwo');
-  var selectSingle_titleTwo = selectSingleTwo.querySelector('.__select__titleTwo');
-  var selectSingle_labelsTwo = selectSingleTwo.querySelectorAll('.__select__labelTwo'); // Toggle menu
+  var selectSingleTwo = document.querySelector('.selectTwo');
+  var selectSingle_titleTwo = selectSingleTwo.querySelector('.select__titleTwo');
+  var selectSingle_labelsTwo = selectSingleTwo.querySelectorAll('.select__labelTwo'); // Toggle menu
 
   selectSingle_titleTwo.addEventListener('click', function () {
     if ('active' === selectSingleTwo.getAttribute('data-state')) {

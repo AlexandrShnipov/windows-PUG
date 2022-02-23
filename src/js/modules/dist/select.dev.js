@@ -1,9 +1,9 @@
 "use strict";
 
 (function select() {
-  var selectSingle = document.querySelector('.__select');
-  var selectSingle_title = selectSingle.querySelector('.__select__title');
-  var selectSingle_labels = selectSingle.querySelectorAll('.__select__label'); // Toggle menu
+  var selectSingle = document.querySelector('.select');
+  var selectSingle_title = selectSingle.querySelector('.select__title');
+  var selectSingle_labels = selectSingle.querySelectorAll('.select__label'); // Toggle menu
 
   selectSingle_title.addEventListener('click', function () {
     if ('active' === selectSingle.getAttribute('data-state')) {

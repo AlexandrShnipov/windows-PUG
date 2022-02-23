@@ -39,7 +39,8 @@
 	}
 
 	.nav-menu li {
-		width: 100%;
+		margin-right: 1px;
+    margin-left: 1px;
 		transition: all 0.3s;
 
 		&:nth-child(6) {
@@ -74,7 +75,7 @@
 			display: block;
 
 			&:active {
-				border-right: 9px solid #c8f5ff;
+				color:white;
 			}
 		}
 

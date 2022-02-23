@@ -267,10 +267,10 @@
 
 @keyframes social {
 	0% {
-		transform: scale(1.1) rotateY(0deg);
+		transform: rotateY(0deg);
 	}
 
 	100% {
-		transform: scale(1.1) rotateY(360deg);
+		transform: rotateY(360deg);
 	}
 }

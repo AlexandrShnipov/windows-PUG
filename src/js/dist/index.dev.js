@@ -12,9 +12,7 @@ var _menuMobile = _interopRequireDefault(require("./modules/menu-mobile"));
 
 var _form = _interopRequireDefault(require("./modules/form"));
 
-var _select = _interopRequireDefault(require("./modules/select"));
-
-var _selectTwo = _interopRequireDefault(require("./modules/selectTwo"));
+var _buttonFilter = _interopRequireDefault(require("./modules/button-filter"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,14 +22,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 // сотрудники слайдер
 // гамбургер
 // форма поиска
-//import toggleModal from './modules/button-filter'; // фильтр каталога
-// фильтр каталога
+//import select from './modules/select'; // фильтр каталога
+//import selectTwo from './modules/selectTwo'; // фильтр каталога
 // фильтр каталога
 (0, _accordion["default"])();
 (0, _reviews["default"])();
 (0, _employees["default"])();
 (0, _menuMobile["default"])();
-(0, _form["default"])(); //toggleModal();
+(0, _form["default"])(); //select();
+//selectTwo();
 
-(0, _select["default"])();
-(0, _selectTwo["default"])();
+(0, _buttonFilter["default"])();

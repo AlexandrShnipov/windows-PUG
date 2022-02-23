@@ -1,6 +1,6 @@
 export default function toggleModal() {
   const filterButton = document.querySelector(".button-modal--open");
-  const modal = document.querySelector(".modal");
+  const modal = document.querySelector(".modal-filter");
   const close = document.querySelector(".modal__button--closed");
   const filter = document.querySelector(".filter__wrap")
 
