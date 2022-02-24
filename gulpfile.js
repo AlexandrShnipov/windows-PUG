@@ -390,3 +390,10 @@ gulp.task('default', gulp.series(
 gulp.task('prod', gulp.series(
     'prod', 'server'
 ));
+
+// var gulp        = require('gulp');
+// var deploy      = require('gulp-gh-pages');
+// gulp.task('deploy', function () {
+//   return gulp.src("./build/**/*")
+//     .pipe(deploy())
+// });

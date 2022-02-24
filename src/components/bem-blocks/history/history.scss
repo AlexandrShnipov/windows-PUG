@@ -1,7 +1,7 @@
 .history {
   margin-bottom: 7rem;
 
-  @media(max-width:413px){
+  @media(max-width:413px) {
     margin-bottom: 2rem;
   }
 
@@ -49,6 +49,30 @@
 
     &-img-box {
       height: 100%;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -1.5rem;
+        left: -1.5rem;
+        width: 8rem;
+        height: 8rem;
+        border: 2px solid #83AEAD;
+        border-radius: 10px;
+        z-index: -1;
+
+        @include media(xxl) {
+          width: 13.2rem;
+          height: 13.2rem;
+        }
+      }
+    }
+
+    &-img-box.history__item-img-box--two::after {
+      right: -1.5rem;
+      left: initial;
     }
 
     &-text {
