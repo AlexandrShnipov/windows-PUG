@@ -1,18 +1,22 @@
 .history {
   margin-bottom: 7rem;
 
-  @include media(lg){
+  @media(max-width:413px){
+    margin-bottom: 2rem;
+  }
+
+  @include media(lg) {
     margin-bottom: 6rem;
   }
 
-  @include media(xxl){
+  @include media(xxl) {
     margin-bottom: 10rem;
   }
 
   h2 {
     margin-bottom: 4rem;
 
-    @include media(lg){
+    @include media(lg) {
       margin-bottom: 7rem;
     }
   }
@@ -20,7 +24,7 @@
   h3.title--right {
     margin-bottom: 2.5rem;
 
-    @include media(lg){
+    @include media(lg) {
       margin-bottom: 4rem;
     }
   }
@@ -28,12 +32,17 @@
   .history__item {
     margin-bottom: 4rem;
     display: grid;
-    column-gap: 2.5rem;
+    gap: 2.5rem;
     grid-template-columns: repeat(2, 1fr);
     min-height: 25rem;
     align-items: center;
 
-    @include media(lg){
+    @media(max-width:413px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include media(lg) {
       margin-bottom: 6rem;
       column-gap: 3.3rem;
     }
@@ -45,14 +54,14 @@
     &-text {
       @include font(1.2rem, 1.33);
 
-      @include media(md){
-       font-size: 2rem;
+      @include media(md) {
+        font-size: 2rem;
       }
 
-      @include media(xxl){
+      @include media(xxl) {
         font-size: 2.4rem;
         line-height: 1.36;
-       }
+      }
 
     }
   }

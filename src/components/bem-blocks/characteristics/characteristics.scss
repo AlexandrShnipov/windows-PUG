@@ -26,6 +26,15 @@
     border: 2px solid #83AEAD;
     margin-bottom: 2rem;
 
+    @media(max-width:413px){
+      font-size: 1.5rem;
+      padding: 1.5rem 1rem 1.5rem 1rem;
+
+      span svg{
+        width: 60px;
+      }
+    }
+
     @include media(lg) {
       margin-bottom: 0;
       padding: 1.5rem 2rem 1.5rem 1.5rem;

@@ -78,6 +78,11 @@
       left: -3rem;
     }
 
+    @include media(md){
+      font-size: 3rem;
+      max-width: 30rem;
+    }
+
     @include media(lg) {
       @include font(4rem);
       padding-top: 2.5rem;
@@ -148,7 +153,7 @@
     }
 
     @include media (md) {
-      @include pos (absolute, $bottom:6rem);
+      @include pos (absolute, $bottom:25rem);
     }
 
     @include media (lg) {
@@ -238,6 +243,11 @@
     padding-bottom: 1rem;
     left: -15rem;
     width: 25rem;
+
+    @include media(md){
+      font-size: 3rem;
+      width: 30rem;
+    }
 
     @include media(lg) {
       top: 10rem;

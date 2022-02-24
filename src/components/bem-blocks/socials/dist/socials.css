@@ -5,6 +5,11 @@
   padding-top: 2.5rem;
   align-self: flex-start;
 }
+@media (max-width: 320px) {
+  .social {
+    gap: 3.5rem;
+  }
+}
 @media (max-width: 25.8rem) {
   .social {
     align-self: center;
